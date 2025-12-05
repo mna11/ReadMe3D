@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a20"/>
+      <stop offset="100%" style="stop-color:#1a1a40"/>
+    </linearGradient>
+    <linearGradient id="windowGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffee88"/>
+      <stop offset="100%" style="stop-color:#ffaa33"/>
+    </linearGradient>
+    <style>
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; }
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-2px); }
+      }
+      @keyframes windowFlicker {
+        0%, 90%, 100% { opacity: 1; }
+        95% { opacity: 0.5; }
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+      .star { animation: twinkle 2s ease-in-out infinite; }
+      .building { animation: float 4s ease-in-out infinite; }
+      .building:nth-child(odd) { animation-delay: 0.5s; }
+      .window { animation: windowFlicker 5s ease-in-out infinite; }
+      .tower-light { animation: blink 1.5s ease-in-out infinite; }
+    </style>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect width="800" height="400" fill="url(#skyGradient)"/>
+  
+  <!-- 별 -->
+  <circle class="star" cx="196.96877131312914" cy="101.05022979433286" r="1.4546021569513197" fill="white" style="animation-delay: 0.1s"/><circle class="star" cx="500.07191138405267" cy="37.54530987012066" r="0.6836190218460287" fill="white" style="animation-delay: 2.9s"/><circle class="star" cx="651.2539137123819" cy="126.63713662494997" r="1.6749764835157714" fill="white" style="animation-delay: 1.3s"/><circle class="star" cx="658.7524805000644" cy="116.22781275059226" r="1.751715556621916" fill="white" style="animation-delay: 2.9s"/><circle class="star" cx="113.51061032737792" cy="129.55246657076233" r="0.8445227319731679" fill="white" style="animation-delay: 1.5s"/><circle class="star" cx="89.3771506146134" cy="43.44905306190048" r="1.3553970059786962" fill="white" style="animation-delay: 1.8s"/><circle class="star" cx="117.09615296527912" cy="121.70821063049162" r="1.2799528426207145" fill="white" style="animation-delay: 1.2s"/><circle class="star" cx="557.2086687517665" cy="6.063773964747443" r="1.076348397618602" fill="white" style="animation-delay: 1.3s"/><circle class="star" cx="589.8695654744433" cy="127.92969415316534" r="1.6724618104459024" fill="white" style="animation-delay: 2.1s"/><circle class="star" cx="74.52263089977026" cy="26.926884751852352" r="1.719318076646129" fill="white" style="animation-delay: 1.8s"/><circle class="star" cx="542.2263066029665" cy="16.734268951154498" r="1.3887015255090558" fill="white" style="animation-delay: 1.0s"/><circle class="star" cx="105.52796232285377" cy="55.65723484854096" r="1.35853986657406" fill="white" style="animation-delay: 2.5s"/><circle class="star" cx="694.284208157023" cy="25.051173686315444" r="0.5976196929796496" fill="white" style="animation-delay: 0.1s"/><circle class="star" cx="632.5552813239245" cy="20.741181313641622" r="1.2349711500866407" fill="white" style="animation-delay: 2.4s"/><circle class="star" cx="383.96470921949106" cy="132.7589273871116" r="0.7132475498333443" fill="white" style="animation-delay: 1.9s"/><circle class="star" cx="116.08968899700614" cy="95.40623002838214" r="0.5914321302683708" fill="white" style="animation-delay: 2.0s"/><circle class="star" cx="552.7774029080247" cy="12.961464701384784" r="0.9660629472702992" fill="white" style="animation-delay: 0.0s"/><circle class="star" cx="45.09861533330213" cy="4.7281627173864305" r="1.003307281716144" fill="white" style="animation-delay: 2.0s"/><circle class="star" cx="446.44264798774935" cy="112.55870238699711" r="1.2096167000964975" fill="white" style="animation-delay: 0.8s"/><circle class="star" cx="475.6709718247631" cy="101.84459294294098" r="1.8911198102047146" fill="white" style="animation-delay: 0.4s"/><circle class="star" cx="637.4217055295757" cy="66.70050500213613" r="1.1275564105338869" fill="white" style="animation-delay: 2.7s"/><circle class="star" cx="333.94488187107055" cy="35.859430512501625" r="1.907337305893578" fill="white" style="animation-delay: 2.4s"/><circle class="star" cx="218.69339696828405" cy="57.60832282969328" r="0.5479564998681214" fill="white" style="animation-delay: 0.4s"/><circle class="star" cx="244.08563654971402" cy="95.32688500743447" r="0.7726153895562716" fill="white" style="animation-delay: 3.0s"/><circle class="star" cx="76.91905814696565" cy="71.85504932591853" r="0.9809311964730062" fill="white" style="animation-delay: 0.9s"/><circle class="star" cx="557.4211759046617" cy="115.65218987493054" r="0.9260871854102067" fill="white" style="animation-delay: 1.5s"/><circle class="star" cx="398.5586849009874" cy="102.17037176640036" r="1.985026152327883" fill="white" style="animation-delay: 1.7s"/><circle class="star" cx="547.6900838826099" cy="108.32459653391862" r="0.7626020726498385" fill="white" style="animation-delay: 1.5s"/><circle class="star" cx="732.57462822121" cy="71.2119507551145" r="0.6642374805330854" fill="white" style="animation-delay: 0.6s"/><circle class="star" cx="620.0162823607467" cy="134.90950015330372" r="0.7336940819383518" fill="white" style="animation-delay: 1.4s"/><circle class="star" cx="350.39426202209063" cy="24.84603849320709" r="0.8614940773448222" fill="white" style="animation-delay: 2.0s"/><circle class="star" cx="299.7206493967839" cy="107.37133482807903" r="1.4359849929494115" fill="white" style="animation-delay: 2.7s"/><circle class="star" cx="337.77899803782014" cy="8.743999966588023" r="1.8392393931869289" fill="white" style="animation-delay: 2.4s"/><circle class="star" cx="227.24212627134133" cy="128.46855555155432" r="1.3932746729248637" fill="white" style="animation-delay: 1.6s"/><circle class="star" cx="413.939723084304" cy="17.45592484967605" r="1.7735171771417553" fill="white" style="animation-delay: 2.9s"/><circle class="star" cx="776.0526504878884" cy="142.29131317512923" r="1.4856901113288759" fill="white" style="animation-delay: 1.5s"/><circle class="star" cx="657.8019122209485" cy="24.310370992057294" r="0.5523193394325013" fill="white" style="animation-delay: 0.2s"/><circle class="star" cx="440.7348200239985" cy="91.18849211424678" r="1.9130111165995087" fill="white" style="animation-delay: 2.8s"/><circle class="star" cx="762.977400889813" cy="135.85258124428543" r="1.6050432357457611" fill="white" style="animation-delay: 2.4s"/><circle class="star" cx="152.0147589918972" cy="93.5517917598758" r="0.6499143326197568" fill="white" style="animation-delay: 2.5s"/><circle class="star" cx="774.743103737352" cy="33.28950615467543" r="1.5304266295179019" fill="white" style="animation-delay: 0.0s"/><circle class="star" cx="584.0231029592898" cy="119.34023116841662" r="0.5158413862686834" fill="white" style="animation-delay: 1.0s"/><circle class="star" cx="493.09814370428705" cy="40.03653911338336" r="0.5860187722309359" fill="white" style="animation-delay: 2.8s"/><circle class="star" cx="159.28114123856218" cy="78.20964488916844" r="1.618952698162206" fill="white" style="animation-delay: 0.9s"/><circle class="star" cx="388.6045022253942" cy="70.85590308245217" r="1.3437511767600534" fill="white" style="animation-delay: 0.8s"/><circle class="star" cx="569.0727594992031" cy="45.21291985490171" r="1.225667447493555" fill="white" style="animation-delay: 2.0s"/><circle class="star" cx="339.6635764602598" cy="98.8036112674382" r="0.6218890218690613" fill="white" style="animation-delay: 0.8s"/><circle class="star" cx="608.8537763293594" cy="128.6566859236103" r="1.417647276438828" fill="white" style="animation-delay: 0.0s"/><circle class="star" cx="169.26643972686185" cy="80.97237844398501" r="1.8454781801436133" fill="white" style="animation-delay: 2.4s"/><circle class="star" cx="378.7763915797598" cy="128.3740356980129" r="1.7280637834026504" fill="white" style="animation-delay: 1.7s"/>
+  
+  <!-- 달 -->
+  <circle cx="700" cy="50" r="20" fill="#ffffee" opacity="0.9"/>
+  <circle cx="707" cy="46" r="20" fill="url(#skyGradient)"/>
+  
+  <!-- 땅 -->
+  <polygon points="0,340 800,340 800,400 0,400" fill="#1a1a2e"/>
+  <polygon points="0,340 400,300 800,340" fill="#252540"/>
+  
+  <!-- 건물들 -->
+  
+                <g class="building">
+                    <!-- 잔디 -->
+                    <polygon points="153.19,47.5 222.47,87.5 187.83,107.5 118.55000000000001,67.5" fill="#2a4a2a"/>
+                    <!-- 나무 -->
+                    <polygon points="170.51,27.5 157.52,70 183.5,85" fill="#2a5a2a"/>
+                    <polygon points="170.51,7.5 160.118,46.5 180.90200000000002,58.5" fill="#3a6a3a"/>
+                    <rect x="165.778" y="76.5" width="6" height="15" fill="#5a3a2a"/>
+                    <!-- 날짜 라벨 -->
+                    <text x="170.51" y="107.5" text-anchor="middle" fill="#8b949e" font-size="10">Sat</text>
+                    <text x="170.51" y="122.5" text-anchor="middle" fill="#58a6ff" font-size="12" font-weight="bold">0</text>
+                </g>
+                <g class="building">
+                    <!-- 왼쪽 면 -->
+                    <polygon points="200.82,125 200.82,-31 235.46,-51 235.46,105" fill="#7a5a3a"/>
+                    <!-- 오른쪽 면 -->
+                    <polygon points="270.1,165 270.1,9 304.74,-11 304.74,145" fill="#9a7a5a"/>
+                    <!-- 앞면 -->
+                    <polygon points="200.82,125 200.82,-31 270.1,9 270.1,165" fill="#8a6a4a"/>
+                    <!-- 지붕 -->
+                    <polygon points="235.46,-51 304.74,-11 270.1,9 200.82,-31" fill="#aa8a6a"/>
+                    <!-- 창문 -->
+                    <rect class="window" x="244.45" y="-29.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.56"/><rect class="window" x="261.77" y="-19.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.97"/><rect class="window" x="279.09000000000003" y="-9.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.77"/><rect class="window" x="244.45" y="-4.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.95"/><rect class="window" x="261.77" y="5.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.52"/><rect class="window" x="279.09000000000003" y="15.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.85"/><rect class="window" x="244.45" y="20.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.51"/><rect class="window" x="261.77" y="30.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.84"/><rect class="window" x="279.09000000000003" y="40.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.88"/><rect class="window" x="244.45" y="45.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.58"/><rect class="window" x="261.77" y="55.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.61"/><rect class="window" x="279.09000000000003" y="65.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.57"/><rect class="window" x="244.45" y="70.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.63"/><rect class="window" x="261.77" y="80.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.65"/><rect class="window" x="279.09000000000003" y="90.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.75"/><rect class="window" x="244.45" y="95.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.78"/><rect class="window" x="261.77" y="105.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.52"/><rect class="window" x="279.09000000000003" y="115.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.63"/>
+                    <!-- 타워 불빛 -->
+                    
+                    <circle class="tower-light" cx="252.78" cy="-36" r="8" fill="#ff0000" opacity="0.3"/>
+                    <circle class="tower-light" cx="252.78" cy="-36" r="4" fill="#ff3333"/>
+                    <!-- 날짜 라벨 -->
+                    <text x="252.78" y="155" text-anchor="middle" fill="#8b949e" font-size="10">Sun</text>
+                    <text x="252.78" y="170" text-anchor="middle" fill="#58a6ff" font-size="12" font-weight="bold">13</text>
+                </g>
+                <g class="building">
+                    <!-- 잔디 -->
+                    <polygon points="317.73,142.5 387.01,182.5 352.37,202.5 283.09000000000003,162.5" fill="#2a4a2a"/>
+                    <!-- 나무 -->
+                    <polygon points="335.05,122.5 322.06,165 348.04,180" fill="#2a5a2a"/>
+                    <polygon points="335.05,102.5 324.658,141.5 345.442,153.5" fill="#3a6a3a"/>
+                    <rect x="330.318" y="171.5" width="6" height="15" fill="#5a3a2a"/>
+                    <!-- 날짜 라벨 -->
+                    <text x="335.05" y="202.5" text-anchor="middle" fill="#8b949e" font-size="10">Mon</text>
+                    <text x="335.05" y="217.5" text-anchor="middle" fill="#58a6ff" font-size="12" font-weight="bold">0</text>
+                </g>
+                <g class="building">
+                    <!-- 왼쪽 면 -->
+                    <polygon points="365.36,220 365.36,172 400,152 400,200" fill="#3a5a7a"/>
+                    <!-- 오른쪽 면 -->
+                    <polygon points="434.64,260 434.64,212 469.28,192 469.28,240" fill="#5a7a9a"/>
+                    <!-- 앞면 -->
+                    <polygon points="365.36,220 365.36,172 434.64,212 434.64,260" fill="#4a6a8a"/>
+                    <!-- 지붕 -->
+                    <polygon points="400,152 469.28,192 434.64,212 365.36,172" fill="#6a8aaa"/>
+                    <!-- 창문 -->
+                    <rect class="window" x="408.99" y="173.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.76"/><rect class="window" x="426.31" y="183.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.62"/><rect class="window" x="443.63" y="193.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.97"/>
+                    <!-- 타워 불빛 -->
+                    
+                    <!-- 날짜 라벨 -->
+                    <text x="417.32" y="250" text-anchor="middle" fill="#8b949e" font-size="10">Tue</text>
+                    <text x="417.32" y="265" text-anchor="middle" fill="#58a6ff" font-size="12" font-weight="bold">4</text>
+                </g>
+                <g class="building">
+                    <!-- 잔디 -->
+                    <polygon points="482.27,237.5 551.55,277.5 516.91,297.5 447.63,257.5" fill="#2a4a2a"/>
+                    <!-- 나무 -->
+                    <polygon points="499.59000000000003,217.5 486.6,260 512.58,275" fill="#2a5a2a"/>
+                    <polygon points="499.59000000000003,197.5 489.198,236.5 509.98199999999997,248.5" fill="#3a6a3a"/>
+                    <rect x="494.858" y="266.5" width="6" height="15" fill="#5a3a2a"/>
+                    <!-- 날짜 라벨 -->
+                    <text x="499.59000000000003" y="297.5" text-anchor="middle" fill="#8b949e" font-size="10">Wed</text>
+                    <text x="499.59000000000003" y="312.5" text-anchor="middle" fill="#58a6ff" font-size="12" font-weight="bold">0</text>
+                </g>
+                <g class="building">
+                    <!-- 왼쪽 면 -->
+                    <polygon points="529.9,315 529.9,279 564.54,259 564.54,295" fill="#4a3a2a"/>
+                    <!-- 오른쪽 면 -->
+                    <polygon points="599.1800000000001,355 599.1800000000001,319 633.8199999999999,299 633.8199999999999,335" fill="#6a5a4a"/>
+                    <!-- 앞면 -->
+                    <polygon points="529.9,315 529.9,279 599.1800000000001,319 599.1800000000001,355" fill="#5a4a3a"/>
+                    <!-- 지붕 -->
+                    <polygon points="564.54,259 633.8199999999999,299 599.1800000000001,319 529.9,279" fill="#7a6a5a"/>
+                    <!-- 창문 -->
+                    <rect class="window" x="573.53" y="280.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.60"/><rect class="window" x="590.85" y="290.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.60"/><rect class="window" x="608.17" y="300.5" width="8" height="12" fill="url(#windowGlow)" opacity="0.57"/>
+                    <!-- 타워 불빛 -->
+                    
+                    <!-- 날짜 라벨 -->
+                    <text x="581.86" y="345" text-anchor="middle" fill="#8b949e" font-size="10">Thu</text>
+                    <text x="581.86" y="360" text-anchor="middle" fill="#58a6ff" font-size="12" font-weight="bold">3</text>
+                </g>
+                <g class="building">
+                    <!-- 왼쪽 면 -->
+                    <polygon points="612.17,362.5 612.17,170.5 646.81,150.5 646.81,342.5" fill="#7a5a3a"/>
+                    <!-- 오른쪽 면 -->
+                    <polygon points="681.45,402.5 681.45,210.5 716.0899999999999,190.5 716.0899999999999,382.5" fill="#9a7a5a"/>
+                    <!-- 앞면 -->
+                    <polygon points="612.17,362.5 612.17,170.5 681.45,210.5 681.45,402.5" fill="#8a6a4a"/>
+                    <!-- 지붕 -->
+                    <polygon points="646.81,150.5 716.0899999999999,190.5 681.45,210.5 612.17,170.5" fill="#aa8a6a"/>
+                    <!-- 창문 -->
+                    <rect class="window" x="655.8" y="172" width="8" height="12" fill="url(#windowGlow)" opacity="0.94"/><rect class="window" x="673.12" y="182" width="8" height="12" fill="url(#windowGlow)" opacity="0.95"/><rect class="window" x="690.44" y="192" width="8" height="12" fill="url(#windowGlow)" opacity="0.59"/><rect class="window" x="655.8" y="197" width="8" height="12" fill="url(#windowGlow)" opacity="0.81"/><rect class="window" x="673.12" y="207" width="8" height="12" fill="url(#windowGlow)" opacity="0.68"/><rect class="window" x="690.44" y="217" width="8" height="12" fill="url(#windowGlow)" opacity="0.65"/><rect class="window" x="655.8" y="222" width="8" height="12" fill="url(#windowGlow)" opacity="0.52"/><rect class="window" x="673.12" y="232" width="8" height="12" fill="url(#windowGlow)" opacity="0.94"/><rect class="window" x="690.44" y="242" width="8" height="12" fill="url(#windowGlow)" opacity="0.53"/><rect class="window" x="655.8" y="247" width="8" height="12" fill="url(#windowGlow)" opacity="0.77"/><rect class="window" x="673.12" y="257" width="8" height="12" fill="url(#windowGlow)" opacity="0.54"/><rect class="window" x="690.44" y="267" width="8" height="12" fill="url(#windowGlow)" opacity="0.98"/><rect class="window" x="655.8" y="272" width="8" height="12" fill="url(#windowGlow)" opacity="0.88"/><rect class="window" x="673.12" y="282" width="8" height="12" fill="url(#windowGlow)" opacity="0.92"/><rect class="window" x="690.44" y="292" width="8" height="12" fill="url(#windowGlow)" opacity="0.59"/><rect class="window" x="655.8" y="297" width="8" height="12" fill="url(#windowGlow)" opacity="0.75"/><rect class="window" x="673.12" y="307" width="8" height="12" fill="url(#windowGlow)" opacity="0.57"/><rect class="window" x="690.44" y="317" width="8" height="12" fill="url(#windowGlow)" opacity="0.71"/><rect class="window" x="655.8" y="322" width="8" height="12" fill="url(#windowGlow)" opacity="0.98"/><rect class="window" x="673.12" y="332" width="8" height="12" fill="url(#windowGlow)" opacity="0.64"/><rect class="window" x="690.44" y="342" width="8" height="12" fill="url(#windowGlow)" opacity="0.57"/>
+                    <!-- 타워 불빛 -->
+                    
+                    <circle class="tower-light" cx="664.13" cy="165.5" r="8" fill="#ff0000" opacity="0.3"/>
+                    <circle class="tower-light" cx="664.13" cy="165.5" r="4" fill="#ff3333"/>
+                    <!-- 날짜 라벨 -->
+                    <text x="664.13" y="392.5" text-anchor="middle" fill="#8b949e" font-size="10">Fri</text>
+                    <text x="664.13" y="407.5" text-anchor="middle" fill="#58a6ff" font-size="12" font-weight="bold">16</text>
+                </g>
+  
+  <!-- 타이틀 -->
+  <text x="400" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+    🏙️ mna11's Contribution City
+  </text>
+  
+  <!-- 통계 -->
+  <text x="400" y="385" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="12">
+    This Week: 36 contributions | Total: 1113 contributions
+  </text>
+</svg>
