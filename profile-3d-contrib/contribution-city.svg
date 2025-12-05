@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
   <defs>
     <!-- 배경 그라데이션 -->
     <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -77,10 +77,10 @@
   </defs>
   
   <!-- 배경 -->
-  <rect width="900" height="450" fill="url(#skyGradient)"/>
+  <rect width="900" height="500" fill="url(#skyGradient)"/>
   
   <!-- 별 -->
-  <circle class="star" cx="831.961047088518" cy="82.82374653170082" r="1.5053499302404836" fill="white" style="animation-delay: 2.5s; animation-duration: 4.0s"/><circle class="star" cx="882.5657079285883" cy="76.21839233787934" r="2.0805691235382864" fill="white" style="animation-delay: 1.5s; animation-duration: 3.6s"/><circle class="star" cx="22.23954015177092" cy="46.72896518472973" r="1.4959997835547703" fill="white" style="animation-delay: 2.7s; animation-duration: 2.7s"/><circle class="star" cx="784.9079309278164" cy="105.70497720446599" r="1.8384850005641473" fill="white" style="animation-delay: 4.0s; animation-duration: 4.0s"/><circle class="star" cx="248.97543701682432" cy="76.63370015150622" r="0.7859187617215093" fill="white" style="animation-delay: 2.0s; animation-duration: 4.0s"/><circle class="star" cx="551.6902578428396" cy="65.6472822017801" r="0.35329911699683847" fill="white" style="animation-delay: 1.7s; animation-duration: 2.5s"/><circle class="star" cx="688.4177971731175" cy="52.735133506141665" r="1.5051935508487277" fill="white" style="animation-delay: 3.5s; animation-duration: 3.5s"/><circle class="star" cx="836.7393292348926" cy="97.88659647107794" r="0.4936347368288327" fill="white" style="animation-delay: 1.1s; animation-duration: 2.8s"/><circle class="star" cx="747.6368957387332" cy="41.02233394428296" r="0.937514470241875" fill="white" style="animation-delay: 2.1s; animation-duration: 3.1s"/><circle class="star" cx="486.3123385409108" cy="86.71562997735167" r="1.4224805569648402" fill="white" style="animation-delay: 0.9s; animation-duration: 2.0s"/><circle class="star" cx="253.82885881735845" cy="23.347887535225603" r="2.0615413271080043" fill="white" style="animation-delay: 2.1s; animation-duration: 2.7s"/><circle class="star" cx="655.599412643093" cy="100.58258128373312" r="1.5902875314273035" fill="white" style="animation-delay: 4.0s; animation-duration: 3.5s"/><circle class="star" cx="481.6842587561165" cy="36.85032698849516" r="0.5986637324991283" fill="white" style="animation-delay: 0.4s; animation-duration: 2.6s"/><circle class="star" cx="167.18069460258835" cy="136.351110248138" r="1.6190645657030225" fill="white" style="animation-delay: 1.2s; animation-duration: 2.2s"/><circle class="star" cx="406.4686203615895" cy="5.97996668277287" r="2.0177846185163393" fill="white" style="animation-delay: 3.1s; animation-duration: 2.5s"/><circle class="star" cx="282.78161051817983" cy="2.6547238368887305" r="1.7693006908835842" fill="white" style="animation-delay: 1.2s; animation-duration: 2.9s"/><circle class="star" cx="302.77703030611434" cy="38.02417616771885" r="1.7748408992910734" fill="white" style="animation-delay: 4.0s; animation-duration: 2.1s"/><circle class="star" cx="170.28795248940523" cy="87.0710121660283" r="1.36144843168007" fill="white" style="animation-delay: 2.7s; animation-duration: 2.7s"/><circle class="star" cx="284.7170930531517" cy="102.10334982267001" r="0.733051838617406" fill="white" style="animation-delay: 1.8s; animation-duration: 3.3s"/><circle class="star" cx="867.8083554286095" cy="56.21781230282021" r="0.39935988337289385" fill="white" style="animation-delay: 1.4s; animation-duration: 3.4s"/><circle class="star" cx="304.1812385305255" cy="92.97801802992618" r="0.7776215488843354" fill="white" style="animation-delay: 1.6s; animation-duration: 2.2s"/><circle class="star" cx="642.8092870848265" cy="53.94659171096094" r="0.3814505069636227" fill="white" style="animation-delay: 2.2s; animation-duration: 2.7s"/><circle class="star" cx="618.7139980874025" cy="126.55047837617668" r="1.7858168953981477" fill="white" style="animation-delay: 3.7s; animation-duration: 2.6s"/><circle class="star" cx="364.5266625461907" cy="10.485874816536217" r="0.9574184768824479" fill="white" style="animation-delay: 3.4s; animation-duration: 2.9s"/><circle class="star" cx="830.9573929930339" cy="119.31735462755825" r="1.3600089228084793" fill="white" style="animation-delay: 1.3s; animation-duration: 2.2s"/><circle class="star" cx="441.97474586319396" cy="21.84524722312359" r="0.6796584112183521" fill="white" style="animation-delay: 1.5s; animation-duration: 3.8s"/><circle class="star" cx="286.61859407270543" cy="86.85192421011915" r="0.33608811183003745" fill="white" style="animation-delay: 2.6s; animation-duration: 2.4s"/><circle class="star" cx="232.88567659445735" cy="130.05747644734393" r="2.0062843389251057" fill="white" style="animation-delay: 2.1s; animation-duration: 2.2s"/><circle class="star" cx="853.9016669963473" cy="34.49668187298946" r="1.3740432499863096" fill="white" style="animation-delay: 0.3s; animation-duration: 2.5s"/><circle class="star" cx="627.9793312932065" cy="2.834269635250646" r="1.156216651262011" fill="white" style="animation-delay: 2.0s; animation-duration: 2.4s"/><circle class="star" cx="555.3064035659123" cy="124.25213134612648" r="1.3413556160116162" fill="white" style="animation-delay: 3.1s; animation-duration: 3.7s"/><circle class="star" cx="709.9254549652544" cy="122.20880174966499" r="1.8816810527616321" fill="white" style="animation-delay: 3.3s; animation-duration: 2.1s"/><circle class="star" cx="185.74596945029705" cy="85.44509040766394" r="2.029256922562468" fill="white" style="animation-delay: 2.5s; animation-duration: 3.8s"/><circle class="star" cx="150.5798961444883" cy="30.263208382712236" r="0.3874685676340185" fill="white" style="animation-delay: 1.7s; animation-duration: 2.6s"/><circle class="star" cx="773.10286455475" cy="1.2899926104245063" r="1.013914289870762" fill="white" style="animation-delay: 3.5s; animation-duration: 2.4s"/><circle class="star" cx="85.12417170174533" cy="108.04262515806558" r="1.1211416949409165" fill="white" style="animation-delay: 1.5s; animation-duration: 3.3s"/><circle class="star" cx="837.3620711169557" cy="42.68759274687777" r="1.9796632950044324" fill="white" style="animation-delay: 1.6s; animation-duration: 3.5s"/><circle class="star" cx="195.39373135819008" cy="30.772146389171496" r="1.357186160037281" fill="white" style="animation-delay: 4.0s; animation-duration: 2.5s"/><circle class="star" cx="99.4235500513769" cy="68.69154474417361" r="0.9577042279101269" fill="white" style="animation-delay: 1.2s; animation-duration: 3.5s"/><circle class="star" cx="96.47636771454575" cy="8.315972436691483" r="0.9021413878638744" fill="white" style="animation-delay: 1.2s; animation-duration: 2.3s"/><circle class="star" cx="847.55644031043" cy="104.25299377549271" r="0.7671213027643322" fill="white" style="animation-delay: 2.2s; animation-duration: 3.5s"/><circle class="star" cx="71.12353056496747" cy="83.1266407220885" r="1.421071330984449" fill="white" style="animation-delay: 3.4s; animation-duration: 3.7s"/><circle class="star" cx="651.2158592400058" cy="27.094100016609616" r="0.6770657455402478" fill="white" style="animation-delay: 1.9s; animation-duration: 3.6s"/><circle class="star" cx="737.3677405037116" cy="102.08038596374308" r="1.1688456196990074" fill="white" style="animation-delay: 3.8s; animation-duration: 2.9s"/><circle class="star" cx="234.21894139414687" cy="14.647167085379094" r="1.6587574337328463" fill="white" style="animation-delay: 3.5s; animation-duration: 3.2s"/><circle class="star" cx="455.9038632140971" cy="43.8307646157986" r="1.9972025431871365" fill="white" style="animation-delay: 2.9s; animation-duration: 3.0s"/><circle class="star" cx="14.711573481944985" cy="15.097347892932817" r="1.8224571944021213" fill="white" style="animation-delay: 0.1s; animation-duration: 2.6s"/><circle class="star" cx="657.7466307386684" cy="97.3797363592924" r="0.9734913838335251" fill="white" style="animation-delay: 1.9s; animation-duration: 2.8s"/><circle class="star" cx="879.8506999425593" cy="130.46753033793755" r="0.5894730610711193" fill="white" style="animation-delay: 1.3s; animation-duration: 3.2s"/><circle class="star" cx="823.8998482654868" cy="19.54074016884565" r="1.5404357259996402" fill="white" style="animation-delay: 2.4s; animation-duration: 3.4s"/><circle class="star" cx="642.5385666094138" cy="51.66485528442557" r="1.4601335687875123" fill="white" style="animation-delay: 2.9s; animation-duration: 3.4s"/><circle class="star" cx="308.16181909187236" cy="98.62984806141445" r="0.5434856029266718" fill="white" style="animation-delay: 0.9s; animation-duration: 2.2s"/><circle class="star" cx="32.019797141559096" cy="134.4197635043311" r="0.6565000833489343" fill="white" style="animation-delay: 2.0s; animation-duration: 2.9s"/><circle class="star" cx="96.77206748853165" cy="128.01041671391317" r="0.7816984979268884" fill="white" style="animation-delay: 2.1s; animation-duration: 2.3s"/><circle class="star" cx="577.1772660646527" cy="28.56892330466778" r="0.8594695057274844" fill="white" style="animation-delay: 0.4s; animation-duration: 2.7s"/><circle class="star" cx="55.43034968328415" cy="58.97298275586519" r="1.556069220268515" fill="white" style="animation-delay: 0.4s; animation-duration: 2.5s"/><circle class="star" cx="655.0001217878972" cy="95.12028728385233" r="1.2983818394399302" fill="white" style="animation-delay: 1.5s; animation-duration: 2.3s"/><circle class="star" cx="85.41445030741757" cy="69.15893033134435" r="1.7984014105394568" fill="white" style="animation-delay: 1.6s; animation-duration: 2.1s"/><circle class="star" cx="673.624219324423" cy="69.99715982754219" r="1.7108370139099298" fill="white" style="animation-delay: 1.0s; animation-duration: 3.2s"/><circle class="star" cx="76.48058252337877" cy="50.23395749885316" r="1.4855123306194498" fill="white" style="animation-delay: 3.6s; animation-duration: 2.1s"/><circle class="star" cx="131.47542195864824" cy="13.167243823987654" r="0.5385983945239451" fill="white" style="animation-delay: 0.6s; animation-duration: 3.4s"/><circle class="star" cx="891.1012259784818" cy="60.7845043117221" r="2.069188373514193" fill="white" style="animation-delay: 2.9s; animation-duration: 2.8s"/><circle class="star" cx="380.17444861274214" cy="127.75552561514525" r="0.7977361886871389" fill="white" style="animation-delay: 1.9s; animation-duration: 3.7s"/><circle class="star" cx="698.6313772208351" cy="126.4086839733181" r="0.7335407016698375" fill="white" style="animation-delay: 0.9s; animation-duration: 3.5s"/><circle class="star" cx="31.842787202970978" cy="124.17627878044708" r="0.3735600921944847" fill="white" style="animation-delay: 2.1s; animation-duration: 3.1s"/><circle class="star" cx="2.2205479400087214" cy="38.00076623651448" r="2.073214758314504" fill="white" style="animation-delay: 1.0s; animation-duration: 2.3s"/><circle class="star" cx="618.7893365449256" cy="97.53668115670536" r="0.6991410746715355" fill="white" style="animation-delay: 3.7s; animation-duration: 2.7s"/><circle class="star" cx="125.76895167100619" cy="33.8933366785291" r="1.6095423404167257" fill="white" style="animation-delay: 1.2s; animation-duration: 3.3s"/><circle class="star" cx="86.15405184742781" cy="14.338105836098523" r="1.0379435953178162" fill="white" style="animation-delay: 3.1s; animation-duration: 2.2s"/><circle class="star" cx="31.753902461103433" cy="57.587491102053335" r="1.1184554984060946" fill="white" style="animation-delay: 0.9s; animation-duration: 3.9s"/><circle class="star" cx="534.939587279631" cy="101.39393999718357" r="0.8994332571050909" fill="white" style="animation-delay: 1.9s; animation-duration: 3.8s"/><circle class="star" cx="236.11763254991314" cy="119.2302235495171" r="0.6119983525059336" fill="white" style="animation-delay: 2.7s; animation-duration: 4.0s"/><circle class="star" cx="249.6033760071951" cy="136.0639165819062" r="1.1637347679637375" fill="white" style="animation-delay: 0.6s; animation-duration: 3.7s"/><circle class="star" cx="248.7738913623174" cy="110.33590874062244" r="2.018140586291857" fill="white" style="animation-delay: 2.2s; animation-duration: 2.7s"/><circle class="star" cx="841.3219826497434" cy="34.6848649520292" r="0.6515450940235982" fill="white" style="animation-delay: 3.5s; animation-duration: 3.7s"/><circle class="star" cx="188.94544787896953" cy="66.48310652762474" r="1.3636074236397158" fill="white" style="animation-delay: 2.1s; animation-duration: 3.9s"/><circle class="star" cx="132.83268209444503" cy="70.32247601254873" r="0.7398997897522338" fill="white" style="animation-delay: 2.8s; animation-duration: 2.4s"/><circle class="star" cx="867.6022256935306" cy="62.93033983903631" r="0.5272931055941172" fill="white" style="animation-delay: 0.3s; animation-duration: 3.5s"/><circle class="star" cx="799.3272763558002" cy="91.71871351526059" r="1.8048818150839607" fill="white" style="animation-delay: 2.2s; animation-duration: 2.5s"/><circle class="star" cx="767.677554504495" cy="96.24725119416833" r="1.863784433337982" fill="white" style="animation-delay: 1.5s; animation-duration: 3.5s"/>
+  <circle class="star" cx="752.2037344149013" cy="4.795975683523999" r="1.3956618426362677" fill="white" style="animation-delay: 3.5s; animation-duration: 3.1s"/><circle class="star" cx="155.3718370651219" cy="133.8827592233395" r="1.5845550508094288" fill="white" style="animation-delay: 4.0s; animation-duration: 3.7s"/><circle class="star" cx="586.3124923271014" cy="135.76498186208667" r="1.2481490518229332" fill="white" style="animation-delay: 0.3s; animation-duration: 2.8s"/><circle class="star" cx="652.9782922198491" cy="85.31684388048656" r="0.3547874739489841" fill="white" style="animation-delay: 2.4s; animation-duration: 3.2s"/><circle class="star" cx="513.194197835632" cy="6.306987703853824" r="0.3270934439305995" fill="white" style="animation-delay: 0.8s; animation-duration: 2.9s"/><circle class="star" cx="449.08989908166035" cy="133.01324108292934" r="0.4925962529051124" fill="white" style="animation-delay: 1.0s; animation-duration: 3.1s"/><circle class="star" cx="701.4401876749124" cy="132.92716864244343" r="2.0389741154360985" fill="white" style="animation-delay: 1.5s; animation-duration: 3.9s"/><circle class="star" cx="308.33644591665717" cy="123.68953439941063" r="1.950013955759631" fill="white" style="animation-delay: 4.0s; animation-duration: 2.9s"/><circle class="star" cx="362.4474357098402" cy="110.27523360103055" r="1.6207047165076809" fill="white" style="animation-delay: 1.3s; animation-duration: 3.6s"/><circle class="star" cx="483.32323634876843" cy="88.73402177773953" r="0.7419063989966787" fill="white" style="animation-delay: 0.1s; animation-duration: 2.4s"/><circle class="star" cx="647.2197786980281" cy="14.985031783984537" r="1.7475692007328805" fill="white" style="animation-delay: 1.7s; animation-duration: 3.1s"/><circle class="star" cx="855.2773914488289" cy="36.91880615917376" r="1.7795851103973774" fill="white" style="animation-delay: 0.3s; animation-duration: 2.0s"/><circle class="star" cx="239.02358919233126" cy="29.628339377355406" r="0.6587384340812934" fill="white" style="animation-delay: 3.7s; animation-duration: 3.0s"/><circle class="star" cx="638.0119624794122" cy="120.36956211136064" r="1.582145234292154" fill="white" style="animation-delay: 0.7s; animation-duration: 3.3s"/><circle class="star" cx="739.4290562302051" cy="9.151200981204543" r="0.6935377744566578" fill="white" style="animation-delay: 2.9s; animation-duration: 2.6s"/><circle class="star" cx="876.800398172945" cy="120.72106122746413" r="1.7191235136676568" fill="white" style="animation-delay: 0.2s; animation-duration: 3.8s"/><circle class="star" cx="852.3309319047568" cy="69.11886163105632" r="0.5259105933612729" fill="white" style="animation-delay: 1.4s; animation-duration: 3.8s"/><circle class="star" cx="92.25410976672318" cy="3.9104363479001236" r="0.9020639313929733" fill="white" style="animation-delay: 1.3s; animation-duration: 2.3s"/><circle class="star" cx="307.26765629021776" cy="47.039146598204525" r="1.8844424219608111" fill="white" style="animation-delay: 1.9s; animation-duration: 2.4s"/><circle class="star" cx="72.34618847848975" cy="38.04678855968522" r="1.0526096592239402" fill="white" style="animation-delay: 3.6s; animation-duration: 3.6s"/><circle class="star" cx="475.3684068108559" cy="118.74661906636862" r="1.1305396177220608" fill="white" style="animation-delay: 1.9s; animation-duration: 2.8s"/><circle class="star" cx="143.24404131382394" cy="64.8652401881542" r="1.4571813538892098" fill="white" style="animation-delay: 2.8s; animation-duration: 2.0s"/><circle class="star" cx="90.28859054886237" cy="0.8623044048766193" r="1.286268120285409" fill="white" style="animation-delay: 1.3s; animation-duration: 3.2s"/><circle class="star" cx="636.6805133459003" cy="27.754525790897183" r="1.2839394194502105" fill="white" style="animation-delay: 3.9s; animation-duration: 3.6s"/><circle class="star" cx="635.3076534548118" cy="123.37743326956435" r="1.4957944386828228" fill="white" style="animation-delay: 0.6s; animation-duration: 3.2s"/><circle class="star" cx="734.9671537741461" cy="98.48795163395222" r="1.3419077272487645" fill="white" style="animation-delay: 1.6s; animation-duration: 3.3s"/><circle class="star" cx="606.161150264991" cy="85.22525821526247" r="0.8334193795379417" fill="white" style="animation-delay: 0.1s; animation-duration: 2.9s"/><circle class="star" cx="577.9633470062521" cy="53.03204977647488" r="1.7911007304676623" fill="white" style="animation-delay: 1.0s; animation-duration: 3.0s"/><circle class="star" cx="304.0617682159248" cy="41.12801713356547" r="1.216591420002246" fill="white" style="animation-delay: 2.0s; animation-duration: 4.0s"/><circle class="star" cx="26.488259207745934" cy="11.701151069303751" r="1.7867295219198847" fill="white" style="animation-delay: 2.5s; animation-duration: 2.0s"/><circle class="star" cx="62.30369777103164" cy="117.78917407234209" r="1.5261676474016326" fill="white" style="animation-delay: 3.9s; animation-duration: 3.6s"/><circle class="star" cx="171.9007392629387" cy="78.7797474809117" r="1.9388844871799913" fill="white" style="animation-delay: 0.6s; animation-duration: 2.7s"/><circle class="star" cx="663.1800200087971" cy="78.84203270923297" r="2.0521922710889324" fill="white" style="animation-delay: 0.6s; animation-duration: 3.3s"/><circle class="star" cx="402.06226727658594" cy="76.00339787749536" r="0.33693272891917914" fill="white" style="animation-delay: 3.6s; animation-duration: 3.9s"/><circle class="star" cx="472.8558121101312" cy="82.30455227904862" r="0.7895347595588906" fill="white" style="animation-delay: 2.7s; animation-duration: 3.3s"/><circle class="star" cx="258.6166900423453" cy="98.18266047531758" r="1.0424823567848218" fill="white" style="animation-delay: 3.1s; animation-duration: 3.5s"/><circle class="star" cx="303.81007696255483" cy="2.288786058213672" r="1.4150425243513567" fill="white" style="animation-delay: 1.9s; animation-duration: 2.2s"/><circle class="star" cx="81.58694965706749" cy="124.42823016633919" r="0.9436843910289392" fill="white" style="animation-delay: 3.7s; animation-duration: 3.7s"/><circle class="star" cx="263.4509132777599" cy="40.464625567637555" r="1.045400856327077" fill="white" style="animation-delay: 0.6s; animation-duration: 3.9s"/><circle class="star" cx="359.1602014357767" cy="78.2280440205236" r="0.33412412085921794" fill="white" style="animation-delay: 2.8s; animation-duration: 2.3s"/><circle class="star" cx="725.4264275827932" cy="58.71168281964671" r="0.7297041737113102" fill="white" style="animation-delay: 0.0s; animation-duration: 2.7s"/><circle class="star" cx="611.0974384419258" cy="80.88829001838984" r="1.661049198817433" fill="white" style="animation-delay: 1.8s; animation-duration: 3.3s"/><circle class="star" cx="242.22199190428682" cy="128.1058864704546" r="0.3330101962044651" fill="white" style="animation-delay: 0.2s; animation-duration: 2.9s"/><circle class="star" cx="97.52451827953111" cy="115.76579622650993" r="0.4195782096773143" fill="white" style="animation-delay: 0.7s; animation-duration: 2.1s"/><circle class="star" cx="35.59164240636306" cy="112.39031852126197" r="1.2129255168726623" fill="white" style="animation-delay: 1.2s; animation-duration: 2.7s"/><circle class="star" cx="67.73522028533267" cy="119.2974498098662" r="1.1295031221027405" fill="white" style="animation-delay: 1.4s; animation-duration: 4.0s"/><circle class="star" cx="687.2652464935202" cy="40.95783727132561" r="2.0067600805581525" fill="white" style="animation-delay: 3.3s; animation-duration: 2.1s"/><circle class="star" cx="670.8412233672046" cy="58.20289869039747" r="1.9180010027875822" fill="white" style="animation-delay: 2.7s; animation-duration: 3.5s"/><circle class="star" cx="170.7873366079037" cy="65.99422657513425" r="0.5240291140058716" fill="white" style="animation-delay: 4.0s; animation-duration: 2.2s"/><circle class="star" cx="137.54558317116675" cy="78.35285638619105" r="1.0963684232870918" fill="white" style="animation-delay: 1.3s; animation-duration: 3.6s"/><circle class="star" cx="121.88244528620721" cy="87.54563351242938" r="1.5566999361087437" fill="white" style="animation-delay: 0.1s; animation-duration: 3.7s"/><circle class="star" cx="219.89725077555386" cy="106.83940530897891" r="1.7106339235178853" fill="white" style="animation-delay: 2.0s; animation-duration: 3.8s"/><circle class="star" cx="695.4810643131215" cy="30.727424128658" r="2.075956894147368" fill="white" style="animation-delay: 0.9s; animation-duration: 4.0s"/><circle class="star" cx="723.8112723845173" cy="58.98351534268301" r="2.0960490736711557" fill="white" style="animation-delay: 3.4s; animation-duration: 3.0s"/><circle class="star" cx="407.8317931451297" cy="129.81745555377492" r="0.36852841599375913" fill="white" style="animation-delay: 1.3s; animation-duration: 3.5s"/><circle class="star" cx="703.6380675702254" cy="107.74278130407875" r="0.7362201404368518" fill="white" style="animation-delay: 1.6s; animation-duration: 2.7s"/><circle class="star" cx="266.4967218481985" cy="112.37052619711527" r="1.3526479641986737" fill="white" style="animation-delay: 0.8s; animation-duration: 3.5s"/><circle class="star" cx="52.69312516120208" cy="131.79793086250422" r="1.5781213667280716" fill="white" style="animation-delay: 1.9s; animation-duration: 2.3s"/><circle class="star" cx="858.617768916814" cy="10.140265487204738" r="0.5833066767848728" fill="white" style="animation-delay: 1.3s; animation-duration: 2.7s"/><circle class="star" cx="634.4582755464195" cy="24.787562562270978" r="1.945423961818188" fill="white" style="animation-delay: 3.6s; animation-duration: 3.7s"/><circle class="star" cx="4.282762519073757" cy="93.00620809611662" r="0.3491019514199056" fill="white" style="animation-delay: 1.9s; animation-duration: 2.0s"/><circle class="star" cx="247.05572355617997" cy="5.567155268457236" r="1.1398185748490897" fill="white" style="animation-delay: 3.4s; animation-duration: 3.2s"/><circle class="star" cx="79.33699095451021" cy="106.0481091843757" r="1.6045778489208067" fill="white" style="animation-delay: 1.6s; animation-duration: 4.0s"/><circle class="star" cx="693.7101637291927" cy="23.9442573614999" r="0.6983116515104455" fill="white" style="animation-delay: 1.2s; animation-duration: 3.8s"/><circle class="star" cx="441.17048806896474" cy="4.668015076352181" r="0.8800148580074763" fill="white" style="animation-delay: 0.4s; animation-duration: 2.3s"/><circle class="star" cx="606.2448566306603" cy="75.04691213963466" r="1.2931936003625744" fill="white" style="animation-delay: 2.4s; animation-duration: 4.0s"/><circle class="star" cx="55.81413100462649" cy="3.0191103812374642" r="0.32317515189241536" fill="white" style="animation-delay: 1.7s; animation-duration: 2.7s"/><circle class="star" cx="16.296371494785376" cy="107.63698665663654" r="0.645037424235949" fill="white" style="animation-delay: 0.3s; animation-duration: 3.4s"/><circle class="star" cx="392.7511209051977" cy="108.4053026201964" r="0.834360169435225" fill="white" style="animation-delay: 1.2s; animation-duration: 3.4s"/><circle class="star" cx="373.303370325763" cy="82.13933435366143" r="0.8471280873036484" fill="white" style="animation-delay: 1.1s; animation-duration: 3.7s"/><circle class="star" cx="621.5204169409805" cy="51.157048891420665" r="0.47135538142122807" fill="white" style="animation-delay: 2.5s; animation-duration: 3.2s"/><circle class="star" cx="544.8471613294405" cy="6.113541867949186" r="1.3981781361375434" fill="white" style="animation-delay: 1.7s; animation-duration: 3.5s"/><circle class="star" cx="744.0861954993611" cy="91.6924990922917" r="1.1137058322697118" fill="white" style="animation-delay: 3.0s; animation-duration: 2.4s"/><circle class="star" cx="115.46629176994045" cy="51.06969836127913" r="0.8419804980673833" fill="white" style="animation-delay: 1.4s; animation-duration: 3.2s"/><circle class="star" cx="93.98126383438053" cy="4.73316140488826" r="1.253658253295576" fill="white" style="animation-delay: 3.8s; animation-duration: 2.4s"/><circle class="star" cx="802.2317797772997" cy="118.11251648710387" r="2.0820328061083617" fill="white" style="animation-delay: 2.0s; animation-duration: 2.8s"/><circle class="star" cx="26.36944847200442" cy="73.92290219143642" r="2.0743045423726914" fill="white" style="animation-delay: 2.4s; animation-duration: 3.4s"/><circle class="star" cx="622.7776663621695" cy="77.53125611490947" r="1.4196161928333284" fill="white" style="animation-delay: 3.8s; animation-duration: 3.9s"/><circle class="star" cx="271.0868196538755" cy="13.109323496625024" r="2.044401162360307" fill="white" style="animation-delay: 2.7s; animation-duration: 2.2s"/><circle class="star" cx="536.9064856773509" cy="82.24529143702532" r="0.6622491158680066" fill="white" style="animation-delay: 0.4s; animation-duration: 2.1s"/>
   
   <!-- 달 -->
   <circle cx="780" cy="70" r="45" fill="url(#moonGlow)" opacity="0.3"/>
@@ -89,10 +89,10 @@
   <circle cx="788" cy="78" r="3" fill="#f0f0d0" opacity="0.3"/>
   
   <!-- 배경 빌딩 실루엣 -->
-  <rect x="-30" y="293.6910107879992" width="42.717883506718735" height="86.30898921200082" fill="#0d0d1a" opacity="0.6"/><rect x="35" y="262.0136619786156" width="32.284625292952434" height="117.98633802138446" fill="#0d0d1a" opacity="0.6"/><rect x="100" y="271.36995149593594" width="39.26285233892215" height="108.63004850406405" fill="#0d0d1a" opacity="0.6"/><rect x="165" y="304.37070299550624" width="47.405849214291614" height="75.62929700449374" fill="#0d0d1a" opacity="0.6"/><rect x="230" y="311.46619535388635" width="62.84310292637287" height="68.53380464611364" fill="#0d0d1a" opacity="0.6"/><rect x="295" y="328.6733658142813" width="59.713608178306295" height="51.326634185718696" fill="#0d0d1a" opacity="0.6"/><rect x="360" y="288.45038179755727" width="41.37869510897048" height="91.5496182024427" fill="#0d0d1a" opacity="0.6"/><rect x="425" y="268.473596246085" width="49.87570202012512" height="111.526403753915" fill="#0d0d1a" opacity="0.6"/><rect x="490" y="283.78001063348165" width="41.19354030933511" height="96.21998936651838" fill="#0d0d1a" opacity="0.6"/><rect x="555" y="315.23082990104285" width="43.00972632385273" height="64.76917009895715" fill="#0d0d1a" opacity="0.6"/><rect x="620" y="327.0096758915453" width="32.144739468004474" height="52.990324108454686" fill="#0d0d1a" opacity="0.6"/><rect x="685" y="318.8712272157145" width="36.32004928481476" height="61.128772784285474" fill="#0d0d1a" opacity="0.6"/><rect x="750" y="270.5291966488252" width="48.929407877819116" height="109.4708033511748" fill="#0d0d1a" opacity="0.6"/><rect x="815" y="339.4218478092406" width="59.113677790122566" height="40.578152190759376" fill="#0d0d1a" opacity="0.6"/><rect x="880" y="311.36242985114285" width="38.36879649193264" height="68.63757014885714" fill="#0d0d1a" opacity="0.6"/>
+  <rect x="-30" y="303.95311868755624" width="51.0948557963069" height="76.04688131244376" fill="#0d0d1a" opacity="0.6"/><rect x="35" y="306.6720617192823" width="67.65131051306014" height="73.32793828071775" fill="#0d0d1a" opacity="0.6"/><rect x="100" y="306.05820690099335" width="46.3296888192565" height="73.94179309900663" fill="#0d0d1a" opacity="0.6"/><rect x="165" y="324.61796562545345" width="69.46994135402522" height="55.382034374546535" fill="#0d0d1a" opacity="0.6"/><rect x="230" y="331.4625469241603" width="62.09001143771084" height="48.53745307583971" fill="#0d0d1a" opacity="0.6"/><rect x="295" y="329.3144707381218" width="36.72520049579974" height="50.68552926187819" fill="#0d0d1a" opacity="0.6"/><rect x="360" y="278.88273437852865" width="55.08415356396851" height="101.11726562147133" fill="#0d0d1a" opacity="0.6"/><rect x="425" y="264.7317354472298" width="44.135313223034615" height="115.26826455277018" fill="#0d0d1a" opacity="0.6"/><rect x="490" y="325.6860682599452" width="47.9702139780354" height="54.31393174005477" fill="#0d0d1a" opacity="0.6"/><rect x="555" y="317.04967410313185" width="63.49608861240506" height="62.95032589686816" fill="#0d0d1a" opacity="0.6"/><rect x="620" y="297.2750559601829" width="66.7099175618261" height="82.72494403981709" fill="#0d0d1a" opacity="0.6"/><rect x="685" y="276.5962537870422" width="68.11065591854958" height="103.40374621295781" fill="#0d0d1a" opacity="0.6"/><rect x="750" y="321.6128633970923" width="47.83861985578774" height="58.38713660290766" fill="#0d0d1a" opacity="0.6"/><rect x="815" y="332.5718367388665" width="37.31455943081177" height="47.428163261133506" fill="#0d0d1a" opacity="0.6"/><rect x="880" y="299.34296864795454" width="36.30855807261203" height="80.6570313520455" fill="#0d0d1a" opacity="0.6"/>
   
   <!-- 땅/물 -->
-  <rect x="0" y="380" width="900" height="70" fill="url(#waterGradient)"/>
+  <rect x="0" y="380" width="900" height="120" fill="url(#waterGradient)"/>
   
   <!-- 수평선 하이라이트 -->
   <line x1="0" y1="380" x2="900" y2="380" stroke="#3a4a6a" stroke-width="1" opacity="0.5"/>
@@ -153,89 +153,89 @@
                     
                     <!-- 창문들 -->
                     
-                        <rect class="window" x="210" y="161.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.89" style="animation-delay: 1.8s"/>
+                        <rect class="window" x="210" y="161.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.98" style="animation-delay: 4.7s"/>
                         <rect x="212" y="163.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="226.25" y="161.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.93" style="animation-delay: 4.5s"/>
+                        <rect class="window" x="226.25" y="161.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.96" style="animation-delay: 2.4s"/>
                         <rect x="228.25" y="163.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="242.5" y="161.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.82" style="animation-delay: 1.0s"/>
+                        <rect class="window" x="242.5" y="161.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.80" style="animation-delay: 4.6s"/>
                         <rect x="244.5" y="163.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="258.75" y="161.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.78" style="animation-delay: 2.8s"/>
+                        <rect class="window" x="258.75" y="161.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.93" style="animation-delay: 1.0s"/>
                         <rect x="260.75" y="163.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="210" y="191.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.99" style="animation-delay: 2.3s"/>
+                        <rect class="window" x="210" y="191.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.84" style="animation-delay: 2.1s"/>
                         <rect x="212" y="193.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="226.25" y="191.66666666666669" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 4.7s"/>
-                        
+                        <rect class="window" x="226.25" y="191.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.85" style="animation-delay: 2.4s"/>
+                        <rect x="228.25" y="193.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="242.5" y="191.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.85" style="animation-delay: 2.3s"/>
+                        <rect class="window" x="242.5" y="191.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.94" style="animation-delay: 3.2s"/>
                         <rect x="244.5" y="193.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="258.75" y="191.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.97" style="animation-delay: 2.6s"/>
+                        <rect class="window" x="258.75" y="191.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.96" style="animation-delay: 0.4s"/>
                         <rect x="260.75" y="193.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="210" y="221.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.91" style="animation-delay: 1.9s"/>
-                        <rect x="212" y="223.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
+                        <rect class="window" x="210" y="221.66666666666669" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 1.3s"/>
+                        
                     
-                        <rect class="window" x="226.25" y="221.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.97" style="animation-delay: 5.0s"/>
+                        <rect class="window" x="226.25" y="221.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.89" style="animation-delay: 1.3s"/>
                         <rect x="228.25" y="223.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="242.5" y="221.66666666666669" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 4.3s"/>
+                        <rect class="window" x="242.5" y="221.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.92" style="animation-delay: 3.6s"/>
+                        <rect x="244.5" y="223.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
+                    
+                        <rect class="window" x="258.75" y="221.66666666666669" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 4.3s"/>
                         
                     
-                        <rect class="window" x="258.75" y="221.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.92" style="animation-delay: 4.3s"/>
-                        <rect x="260.75" y="223.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
+                        <rect class="window" x="210" y="251.66666666666669" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 4.4s"/>
+                        
                     
-                        <rect class="window" x="210" y="251.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.97" style="animation-delay: 0.3s"/>
-                        <rect x="212" y="253.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
-                    
-                        <rect class="window" x="226.25" y="251.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.78" style="animation-delay: 0.0s"/>
+                        <rect class="window" x="226.25" y="251.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.90" style="animation-delay: 4.5s"/>
                         <rect x="228.25" y="253.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="242.5" y="251.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.86" style="animation-delay: 0.3s"/>
+                        <rect class="window" x="242.5" y="251.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.76" style="animation-delay: 2.4s"/>
                         <rect x="244.5" y="253.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="258.75" y="251.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.90" style="animation-delay: 3.2s"/>
+                        <rect class="window" x="258.75" y="251.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.82" style="animation-delay: 2.5s"/>
                         <rect x="260.75" y="253.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="210" y="281.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.98" style="animation-delay: 4.2s"/>
+                        <rect class="window" x="210" y="281.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.87" style="animation-delay: 2.7s"/>
                         <rect x="212" y="283.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="226.25" y="281.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.83" style="animation-delay: 3.6s"/>
+                        <rect class="window" x="226.25" y="281.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.94" style="animation-delay: 2.8s"/>
                         <rect x="228.25" y="283.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="242.5" y="281.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.98" style="animation-delay: 3.4s"/>
+                        <rect class="window" x="242.5" y="281.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.79" style="animation-delay: 4.7s"/>
                         <rect x="244.5" y="283.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="258.75" y="281.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.94" style="animation-delay: 0.6s"/>
+                        <rect class="window" x="258.75" y="281.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.96" style="animation-delay: 2.6s"/>
                         <rect x="260.75" y="283.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="210" y="311.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 0.6s"/>
+                        <rect class="window" x="210" y="311.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 4.7s"/>
                         
                     
-                        <rect class="window" x="226.25" y="311.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 3.5s"/>
-                        
+                        <rect class="window" x="226.25" y="311.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.78" style="animation-delay: 2.6s"/>
+                        <rect x="228.25" y="313.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="242.5" y="311.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 1.9s"/>
-                        
+                        <rect class="window" x="242.5" y="311.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.90" style="animation-delay: 2.3s"/>
+                        <rect x="244.5" y="313.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="258.75" y="311.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.95" style="animation-delay: 1.5s"/>
+                        <rect class="window" x="258.75" y="311.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.94" style="animation-delay: 1.3s"/>
                         <rect x="260.75" y="313.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="210" y="341.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.82" style="animation-delay: 1.4s"/>
+                        <rect class="window" x="210" y="341.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.92" style="animation-delay: 2.5s"/>
                         <rect x="212" y="343.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="226.25" y="341.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 3.6s"/>
-                        
+                        <rect class="window" x="226.25" y="341.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.92" style="animation-delay: 3.9s"/>
+                        <rect x="228.25" y="343.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="242.5" y="341.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="1.00" style="animation-delay: 4.7s"/>
+                        <rect class="window" x="242.5" y="341.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.93" style="animation-delay: 4.3s"/>
                         <rect x="244.5" y="343.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="258.75" y="341.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.97" style="animation-delay: 1.4s"/>
-                        <rect x="260.75" y="343.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
+                        <rect class="window" x="258.75" y="341.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 1.2s"/>
+                        
                     
                     
                     <!-- 라벨 -->
@@ -275,28 +275,28 @@
                     
                     <!-- 창문들 -->
                     
-                        <rect class="window" x="416" y="326.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.78" style="animation-delay: 2.6s"/>
-                        <rect x="418" y="328.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
-                    
-                        <rect class="window" x="432.25" y="326.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 3.4s"/>
+                        <rect class="window" x="416" y="326.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 4.0s"/>
                         
                     
-                        <rect class="window" x="448.5" y="326.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.81" style="animation-delay: 0.9s"/>
+                        <rect class="window" x="432.25" y="326.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.92" style="animation-delay: 3.3s"/>
+                        <rect x="434.25" y="328.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
+                    
+                        <rect class="window" x="448.5" y="326.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="1.00" style="animation-delay: 0.0s"/>
                         <rect x="450.5" y="328.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="464.75" y="326.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.96" style="animation-delay: 2.3s"/>
+                        <rect class="window" x="464.75" y="326.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.97" style="animation-delay: 0.1s"/>
                         <rect x="466.75" y="328.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="416" y="356.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.92" style="animation-delay: 0.9s"/>
+                        <rect class="window" x="416" y="356.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.80" style="animation-delay: 4.2s"/>
                         <rect x="418" y="358.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="432.25" y="356.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.92" style="animation-delay: 2.9s"/>
+                        <rect class="window" x="432.25" y="356.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.97" style="animation-delay: 0.5s"/>
                         <rect x="434.25" y="358.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="448.5" y="356.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.81" style="animation-delay: 1.1s"/>
+                        <rect class="window" x="448.5" y="356.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.96" style="animation-delay: 2.6s"/>
                         <rect x="450.5" y="358.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="464.75" y="356.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.95" style="animation-delay: 1.5s"/>
+                        <rect class="window" x="464.75" y="356.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.86" style="animation-delay: 1.1s"/>
                         <rect x="466.75" y="358.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
                     
@@ -337,17 +337,17 @@
                     
                     <!-- 창문들 -->
                     
-                        <rect class="window" x="622" y="345" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.80" style="animation-delay: 2.5s"/>
-                        <rect x="624" y="347" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
+                        <rect class="window" x="622" y="345" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 2.1s"/>
+                        
                     
-                        <rect class="window" x="638.25" y="345" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.75" style="animation-delay: 4.9s"/>
+                        <rect class="window" x="638.25" y="345" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.79" style="animation-delay: 4.2s"/>
                         <rect x="640.25" y="347" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="654.5" y="345" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.85" style="animation-delay: 1.2s"/>
+                        <rect class="window" x="654.5" y="345" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.86" style="animation-delay: 3.2s"/>
                         <rect x="656.5" y="347" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="670.75" y="345" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.78" style="animation-delay: 0.0s"/>
-                        <rect x="672.75" y="347" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
+                        <rect class="window" x="670.75" y="345" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 1.8s"/>
+                        
                     
                     
                     <!-- 라벨 -->
@@ -369,112 +369,112 @@
                     
                     <!-- 창문들 -->
                     
-                        <rect class="window" x="725" y="106.66666666666669" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 2.5s"/>
-                        
+                        <rect class="window" x="725" y="106.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.77" style="animation-delay: 4.1s"/>
+                        <rect x="727" y="108.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="741.25" y="106.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.99" style="animation-delay: 3.8s"/>
+                        <rect class="window" x="741.25" y="106.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.77" style="animation-delay: 2.1s"/>
                         <rect x="743.25" y="108.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="757.5" y="106.66666666666669" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 4.8s"/>
-                        
+                        <rect class="window" x="757.5" y="106.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.76" style="animation-delay: 1.4s"/>
+                        <rect x="759.5" y="108.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="773.75" y="106.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.84" style="animation-delay: 4.8s"/>
+                        <rect class="window" x="773.75" y="106.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.88" style="animation-delay: 0.1s"/>
                         <rect x="775.75" y="108.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="725" y="136.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.92" style="animation-delay: 2.8s"/>
+                        <rect class="window" x="725" y="136.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.79" style="animation-delay: 3.9s"/>
                         <rect x="727" y="138.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="741.25" y="136.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.97" style="animation-delay: 0.4s"/>
+                        <rect class="window" x="741.25" y="136.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.92" style="animation-delay: 1.4s"/>
                         <rect x="743.25" y="138.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="757.5" y="136.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.83" style="animation-delay: 4.1s"/>
+                        <rect class="window" x="757.5" y="136.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.98" style="animation-delay: 1.6s"/>
                         <rect x="759.5" y="138.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="773.75" y="136.66666666666669" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 2.0s"/>
-                        
+                        <rect class="window" x="773.75" y="136.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.86" style="animation-delay: 4.1s"/>
+                        <rect x="775.75" y="138.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="725" y="166.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.85" style="animation-delay: 3.6s"/>
+                        <rect class="window" x="725" y="166.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.86" style="animation-delay: 4.6s"/>
                         <rect x="727" y="168.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="741.25" y="166.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.89" style="animation-delay: 1.6s"/>
+                        <rect class="window" x="741.25" y="166.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.88" style="animation-delay: 4.7s"/>
                         <rect x="743.25" y="168.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="757.5" y="166.66666666666669" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 0.7s"/>
-                        
+                        <rect class="window" x="757.5" y="166.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.86" style="animation-delay: 3.0s"/>
+                        <rect x="759.5" y="168.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="773.75" y="166.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.77" style="animation-delay: 2.0s"/>
+                        <rect class="window" x="773.75" y="166.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.99" style="animation-delay: 1.2s"/>
                         <rect x="775.75" y="168.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="725" y="196.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.77" style="animation-delay: 0.8s"/>
+                        <rect class="window" x="725" y="196.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.83" style="animation-delay: 4.4s"/>
                         <rect x="727" y="198.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="741.25" y="196.66666666666669" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 2.6s"/>
-                        
+                        <rect class="window" x="741.25" y="196.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.88" style="animation-delay: 1.0s"/>
+                        <rect x="743.25" y="198.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="757.5" y="196.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.86" style="animation-delay: 1.0s"/>
+                        <rect class="window" x="757.5" y="196.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.82" style="animation-delay: 3.0s"/>
                         <rect x="759.5" y="198.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="773.75" y="196.66666666666669" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 4.3s"/>
+                        <rect class="window" x="773.75" y="196.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.77" style="animation-delay: 3.1s"/>
+                        <rect x="775.75" y="198.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
+                    
+                        <rect class="window" x="725" y="226.66666666666669" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 0.8s"/>
                         
                     
-                        <rect class="window" x="725" y="226.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.81" style="animation-delay: 3.1s"/>
-                        <rect x="727" y="228.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
-                    
-                        <rect class="window" x="741.25" y="226.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.76" style="animation-delay: 0.8s"/>
-                        <rect x="743.25" y="228.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
-                    
-                        <rect class="window" x="757.5" y="226.66666666666669" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.82" style="animation-delay: 3.8s"/>
-                        <rect x="759.5" y="228.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
-                    
-                        <rect class="window" x="773.75" y="226.66666666666669" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 4.6s"/>
+                        <rect class="window" x="741.25" y="226.66666666666669" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 0.6s"/>
                         
                     
-                        <rect class="window" x="725" y="256.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 4.8s"/>
+                        <rect class="window" x="757.5" y="226.66666666666669" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 3.9s"/>
                         
                     
-                        <rect class="window" x="741.25" y="256.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.77" style="animation-delay: 1.6s"/>
+                        <rect class="window" x="773.75" y="226.66666666666669" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.93" style="animation-delay: 4.6s"/>
+                        <rect x="775.75" y="228.66666666666669" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
+                    
+                        <rect class="window" x="725" y="256.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 4.9s"/>
+                        
+                    
+                        <rect class="window" x="741.25" y="256.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.90" style="animation-delay: 3.9s"/>
                         <rect x="743.25" y="258.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="757.5" y="256.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.88" style="animation-delay: 4.6s"/>
+                        <rect class="window" x="757.5" y="256.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.88" style="animation-delay: 2.1s"/>
                         <rect x="759.5" y="258.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="773.75" y="256.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.85" style="animation-delay: 0.8s"/>
-                        <rect x="775.75" y="258.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
+                        <rect class="window" x="773.75" y="256.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 0.8s"/>
+                        
                     
-                        <rect class="window" x="725" y="286.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.91" style="animation-delay: 1.3s"/>
+                        <rect class="window" x="725" y="286.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.96" style="animation-delay: 4.4s"/>
                         <rect x="727" y="288.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="741.25" y="286.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.76" style="animation-delay: 3.9s"/>
+                        <rect class="window" x="741.25" y="286.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.89" style="animation-delay: 4.2s"/>
                         <rect x="743.25" y="288.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
                         <rect class="window" x="757.5" y="286.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 1.3s"/>
                         
                     
-                        <rect class="window" x="773.75" y="286.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 2.3s"/>
+                        <rect class="window" x="773.75" y="286.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 1.4s"/>
                         
                     
-                        <rect class="window" x="725" y="316.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.83" style="animation-delay: 4.8s"/>
-                        <rect x="727" y="318.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
-                    
-                        <rect class="window" x="741.25" y="316.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 2.9s"/>
+                        <rect class="window" x="725" y="316.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 3.4s"/>
                         
                     
-                        <rect class="window" x="757.5" y="316.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.96" style="animation-delay: 3.2s"/>
+                        <rect class="window" x="741.25" y="316.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.82" style="animation-delay: 1.8s"/>
+                        <rect x="743.25" y="318.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
+                    
+                        <rect class="window" x="757.5" y="316.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.79" style="animation-delay: 4.1s"/>
                         <rect x="759.5" y="318.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="773.75" y="316.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.85" style="animation-delay: 2.7s"/>
+                        <rect class="window" x="773.75" y="316.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.90" style="animation-delay: 4.5s"/>
                         <rect x="775.75" y="318.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="725" y="346.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.83" style="animation-delay: 2.5s"/>
+                        <rect class="window" x="725" y="346.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.88" style="animation-delay: 3.8s"/>
                         <rect x="727" y="348.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="741.25" y="346.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.93" style="animation-delay: 1.1s"/>
+                        <rect class="window" x="741.25" y="346.6666666666667" width="12" height="16" rx="1" fill="#ffdd77" opacity="0.99" style="animation-delay: 2.7s"/>
                         <rect x="743.25" y="348.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
                     
-                        <rect class="window" x="757.5" y="346.6666666666667" width="12" height="16" rx="1" fill="#ffeebb" opacity="0.95" style="animation-delay: 0.2s"/>
-                        <rect x="759.5" y="348.6666666666667" width="8" height="12" rx="1" fill="#fff8e0" opacity="0.3"/>
+                        <rect class="window" x="757.5" y="346.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 3.6s"/>
+                        
                     
-                        <rect class="window" x="773.75" y="346.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 2.2s"/>
+                        <rect class="window" x="773.75" y="346.6666666666667" width="12" height="16" rx="1" fill="#151520" opacity="0.9" style="animation-delay: 0.0s"/>
                         
                     
                     
@@ -489,12 +489,12 @@
   </text>
   
   <!-- 통계 바 -->
-  <rect x="270" y="415" width="360" height="30" rx="15" fill="#0a0a15" opacity="0.7"/>
-  <text x="370" y="435" text-anchor="middle" fill="#8a9aaa" font-family="'SF Pro Display', Arial, sans-serif" font-size="11">
+  <rect x="270" y="465" width="360" height="30" rx="15" fill="#0a0a15" opacity="0.7"/>
+  <text x="370" y="485" text-anchor="middle" fill="#8a9aaa" font-family="'SF Pro Display', Arial, sans-serif" font-size="11">
     This Week: <tspan fill="#4a9eff" font-weight="600">36</tspan>
   </text>
-  <line x1="450" y1="422" x2="450" y2="438" stroke="#3a4a5a" stroke-width="1"/>
-  <text x="530" y="435" text-anchor="middle" fill="#8a9aaa" font-family="'SF Pro Display', Arial, sans-serif" font-size="11">
+  <line x1="450" y1="472" x2="450" y2="488" stroke="#3a4a5a" stroke-width="1"/>
+  <text x="530" y="485" text-anchor="middle" fill="#8a9aaa" font-family="'SF Pro Display', Arial, sans-serif" font-size="11">
     Total: <tspan fill="#4a9eff" font-weight="600">1113</tspan>
   </text>
 </svg>
