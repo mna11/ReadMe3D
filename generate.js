@@ -4,12 +4,6 @@ const fs = require('fs');
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const USERNAME = process.env.USERNAME;
 
-if (!GITHUB_TOKEN || !USERNAME) {
-    console.error('Error: GITHUB_TOKEN and USERNAME environment variables are required.');
-    process.exit(1);
-}
-
-// 1. 데이터 가져오기 (기존과 동일)
 async function fetchContributions() {
     const query = `
     query($username: String!) {
@@ -68,344 +62,386 @@ async function fetchContributions() {
 
 function getLastWeekData(calendar) {
     const allDays = calendar.weeks.flatMap(w => w.contributionDays);
-    // 화면 레이아웃상 6~7개가 적당
-    return allDays.slice(-6); 
+    return allDays.slice(-7);
 }
 
-// --- 도트 폰트 데이터 (5x7) ---
+// 도트 폰트 (3x5 간단 버전)
 const dotFont = {
-    '0': [[1,1,1],[1,0,1],[1,0,1],[1,0,1],[1,0,1],[1,0,1],[1,1,1]],
-    '1': [[0,1,0],[1,1,0],[0,1,0],[0,1,0],[0,1,0],[0,1,0],[1,1,1]],
-    '2': [[1,1,1],[0,0,1],[0,0,1],[1,1,1],[1,0,0],[1,0,0],[1,1,1]],
-    '3': [[1,1,1],[0,0,1],[0,0,1],[1,1,1],[0,0,1],[0,0,1],[1,1,1]],
-    '4': [[1,0,1],[1,0,1],[1,0,1],[1,1,1],[0,0,1],[0,0,1],[0,0,1]],
-    '5': [[1,1,1],[1,0,0],[1,0,0],[1,1,1],[0,0,1],[0,0,1],[1,1,1]],
-    '6': [[1,1,1],[1,0,0],[1,0,0],[1,1,1],[1,0,1],[1,0,1],[1,1,1]],
-    '7': [[1,1,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1]],
-    '8': [[1,1,1],[1,0,1],[1,0,1],[1,1,1],[1,0,1],[1,0,1],[1,1,1]],
-    '9': [[1,1,1],[1,0,1],[1,0,1],[1,1,1],[0,0,1],[0,0,1],[1,1,1]],
-    'S': [[1,1,1],[1,0,0],[1,0,0],[1,1,1],[0,0,1],[0,0,1],[1,1,1]],
-    'U': [[1,0,1],[1,0,1],[1,0,1],[1,0,1],[1,0,1],[1,0,1],[1,1,1]],
-    'N': [[1,0,1],[1,1,1],[1,1,1],[1,0,1],[1,0,1],[1,0,1],[1,0,1]],
-    'M': [[1,0,1],[1,1,1],[1,1,1],[1,0,1],[1,0,1],[1,0,1],[1,0,1]],
-    'O': [[1,1,1],[1,0,1],[1,0,1],[1,0,1],[1,0,1],[1,0,1],[1,1,1]],
-    'T': [[1,1,1],[0,1,0],[0,1,0],[0,1,0],[0,1,0],[0,1,0],[0,1,0]],
-    'W': [[1,0,1],[1,0,1],[1,0,1],[1,0,1],[1,1,1],[1,1,1],[1,0,1]],
-    'E': [[1,1,1],[1,0,0],[1,0,0],[1,1,1],[1,0,0],[1,0,0],[1,1,1]],
-    'D': [[1,1,0],[1,0,1],[1,0,1],[1,0,1],[1,0,1],[1,0,1],[1,1,0]],
-    'H': [[1,0,1],[1,0,1],[1,0,1],[1,1,1],[1,0,1],[1,0,1],[1,0,1]],
-    'F': [[1,1,1],[1,0,0],[1,0,0],[1,1,1],[1,0,0],[1,0,0],[1,0,0]],
-    'R': [[1,1,0],[1,0,1],[1,0,1],[1,1,0],[1,0,1],[1,0,1],[1,0,1]],
-    'I': [[1,1,1],[0,1,0],[0,1,0],[0,1,0],[0,1,0],[0,1,0],[1,1,1]],
-    'A': [[0,1,0],[1,0,1],[1,0,1],[1,1,1],[1,0,1],[1,0,1],[1,0,1]],
-    'L': [[1,0,0],[1,0,0],[1,0,0],[1,0,0],[1,0,0],[1,0,0],[1,1,1]],
-    'Y': [[1,0,1],[1,0,1],[1,0,1],[0,1,0],[0,1,0],[0,1,0],[0,1,0]],
-    ' ': [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]]
+    '0': [[1,1,1],[1,0,1],[1,0,1],[1,0,1],[1,1,1]],
+    '1': [[0,1,0],[1,1,0],[0,1,0],[0,1,0],[1,1,1]],
+    '2': [[1,1,1],[0,0,1],[1,1,1],[1,0,0],[1,1,1]],
+    '3': [[1,1,1],[0,0,1],[1,1,1],[0,0,1],[1,1,1]],
+    '4': [[1,0,1],[1,0,1],[1,1,1],[0,0,1],[0,0,1]],
+    '5': [[1,1,1],[1,0,0],[1,1,1],[0,0,1],[1,1,1]],
+    '6': [[1,1,1],[1,0,0],[1,1,1],[1,0,1],[1,1,1]],
+    '7': [[1,1,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1]],
+    '8': [[1,1,1],[1,0,1],[1,1,1],[1,0,1],[1,1,1]],
+    '9': [[1,1,1],[1,0,1],[1,1,1],[0,0,1],[1,1,1]],
+    'M': [[1,0,1],[1,1,1],[1,0,1],[1,0,1],[1,0,1]],
+    'O': [[1,1,1],[1,0,1],[1,0,1],[1,0,1],[1,1,1]],
+    'N': [[1,0,1],[1,1,1],[1,1,1],[1,0,1],[1,0,1]],
+    'T': [[1,1,1],[0,1,0],[0,1,0],[0,1,0],[0,1,0]],
+    'U': [[1,0,1],[1,0,1],[1,0,1],[1,0,1],[1,1,1]],
+    'E': [[1,1,1],[1,0,0],[1,1,0],[1,0,0],[1,1,1]],
+    'W': [[1,0,1],[1,0,1],[1,0,1],[1,1,1],[1,0,1]],
+    'D': [[1,1,0],[1,0,1],[1,0,1],[1,0,1],[1,1,0]],
+    'H': [[1,0,1],[1,0,1],[1,1,1],[1,0,1],[1,0,1]],
+    'F': [[1,1,1],[1,0,0],[1,1,0],[1,0,0],[1,0,0]],
+    'R': [[1,1,0],[1,0,1],[1,1,0],[1,0,1],[1,0,1]],
+    'I': [[1,1,1],[0,1,0],[0,1,0],[0,1,0],[1,1,1]],
+    'S': [[1,1,1],[1,0,0],[1,1,1],[0,0,1],[1,1,1]],
+    'A': [[0,1,0],[1,0,1],[1,1,1],[1,0,1],[1,0,1]],
+    'L': [[1,0,0],[1,0,0],[1,0,0],[1,0,0],[1,1,1]],
+    'Y': [[1,0,1],[1,0,1],[0,1,0],[0,1,0],[0,1,0]],
+    'C': [[1,1,1],[1,0,0],[1,0,0],[1,0,0],[1,1,1]],
+    ':': [[0],[1],[0],[1],[0]],
+    ' ': [[0,0],[0,0],[0,0],[0,0],[0,0]]
 };
 
-// 2. SVG 생성 로직 (완전 개편)
+// 2D 도트 텍스트
+function drawDotText2D(text, startX, startY, pixelSize, color) {
+    let svg = '';
+    let offsetX = 0;
+    
+    for (const char of text.toUpperCase()) {
+        const pattern = dotFont[char] || dotFont[' '];
+        const charWidth = pattern[0].length;
+        
+        for (let row = 0; row < pattern.length; row++) {
+            for (let col = 0; col < pattern[row].length; col++) {
+                if (pattern[row][col]) {
+                    const px = startX + (offsetX + col) * pixelSize;
+                    const py = startY + row * pixelSize;
+                    svg += `<rect x="${px}" y="${py}" width="${pixelSize * 0.9}" height="${pixelSize * 0.9}" fill="${color}"/>`;
+                }
+            }
+        }
+        offsetX += charWidth + 1;
+    }
+    return svg;
+}
+
+// 등각투영 도트 텍스트
+function drawIsoDotText(text, baseX, baseY, baseZ, pixelSize, color, isoX, isoY) {
+    let svg = '';
+    let offsetX = 0;
+    
+    for (const char of text.toUpperCase()) {
+        const pattern = dotFont[char] || dotFont[' '];
+        const charWidth = pattern[0].length;
+        
+        for (let row = 0; row < pattern.length; row++) {
+            for (let col = 0; col < pattern[row].length; col++) {
+                if (pattern[row][col]) {
+                    const x = baseX + (offsetX + col) * pixelSize;
+                    const z = baseZ - row * pixelSize;
+                    
+                    const cx = isoX(x, baseY);
+                    const cy = isoY(x, baseY, z);
+                    const s = pixelSize * 0.45;
+                    
+                    // 등각투영 마름모
+                    svg += `<polygon points="${cx},${cy - s} ${cx + s},${cy} ${cx},${cy + s} ${cx - s},${cy}" fill="${color}"/>`;
+                }
+            }
+        }
+        offsetX += charWidth + 1;
+    }
+    return svg;
+}
+
 function generateSVG(weekData, totalContributions) {
     const width = 900;
     const height = 500;
+    
+    // 등각투영 함수 (참고 이미지처럼 오른쪽 위로 올라가는 방향)
+    const isoX = (x, y) => x * 0.8 - y * 0.5;
+    const isoY = (x, y, z) => x * 0.3 + y * 0.6 - z;
+    
     const dayNames = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
-
-    // --- Isometric Math (그리드 시스템) ---
-    const tileW = 32; // 타일 너비 (절반)
-    const tileH = 16; // 타일 높이 (절반)
-    const originX = width / 2;
-    const originY = 100; // 화면 위쪽에서 시작
-
-    // 그리드(x, y) -> 화면(screenX, screenY) 변환
-    const iso = (gx, gy, gz = 0) => {
-        return {
-            x: originX + (gx - gy) * tileW,
-            y: originY + (gx + gy) * tileH - gz
-        };
-    };
-
-    // --- 그리기 헬퍼 함수 ---
-
-    // 육면체(Block) 그리기 - 픽셀 아트 느낌의 외곽선과 단색 면
-    const drawBlock = (gx, gy, gz, w, d, h, colors) => {
-        const { x: px, y: py } = iso(gx, gy, gz);
-        
-        // 투영된 크기 계산 (근사치)
-        // x, y 좌표는 iso 함수가 처리하므로, 여기서는 상대적인 크기만 계산
-        const p_base = iso(gx, gy, gz);
-        const p_right = iso(gx + w, gy, gz);
-        const p_front = iso(gx, gy + d, gz);
-        const p_top = iso(gx, gy, gz + h);
-
-        // SVG Path 생성 (Pixel Perfect를 위해 좌표 정수화 권장되나 SVG라 생략)
-        let svg = '';
-
-        // Top Face
-        const t1 = iso(gx, gy, gz + h);
-        const t2 = iso(gx + w, gy, gz + h);
-        const t3 = iso(gx + w, gy + d, gz + h);
-        const t4 = iso(gx, gy + d, gz + h);
-        svg += `<polygon points="${t1.x},${t1.y} ${t2.x},${t2.y} ${t3.x},${t3.y} ${t4.x},${t4.y}" fill="${colors.top}" stroke="${colors.stroke || 'none'}" stroke-width="1"/>`;
-
-        // Right Face (Side)
-        const r1 = t2;
-        const r2 = t3;
-        const r3 = iso(gx + w, gy + d, gz);
-        const r4 = iso(gx + w, gy, gz);
-        svg += `<polygon points="${r1.x},${r1.y} ${r2.x},${r2.y} ${r3.x},${r3.y} ${r4.x},${r4.y}" fill="${colors.right}" stroke="${colors.stroke || 'none'}" stroke-width="1"/>`;
-
-        // Left Face (Front)
-        const l1 = t4;
-        const l2 = t3;
-        const l3 = iso(gx + w, gy + d, gz);
-        const l4 = iso(gx, gy + d, gz);
-        svg += `<polygon points="${l1.x},${l1.y} ${l2.x},${l2.y} ${l3.x},${l3.y} ${l4.x},${l4.y}" fill="${colors.left}" stroke="${colors.stroke || 'none'}" stroke-width="1"/>`;
-
-        return svg;
-    };
-
-    // 3D 텍스트 (복셀 스타일)
-    const drawVoxelText = (text, startGx, startGy, startGz, color) => {
-        let svg = '';
-        let offset = 0;
-        const scale = 0.15; // 텍스트 크기 조절
-
-        for (const char of text.toUpperCase()) {
-            const pattern = dotFont[char] || dotFont[' '];
-            const width = pattern[0].length;
-
-            for (let r = 0; r < pattern.length; r++) {
-                for (let c = 0; c < pattern[r].length; c++) {
-                    if (pattern[r][c]) {
-                        // 글자를 세우기 위해: gy는 고정, gx는 가로, gz는 높이로 사용
-                        // 화면을 바라보게 하기 위해 gx와 gy를 적절히 섞음
-                        const gx = startGx + offset * scale + c * scale; 
-                        const gy = startGy + offset * scale + c * scale; // 대각선 배치
-                        const gz = startGz + (pattern.length - r) * scale * 20; // 높이
-                        
-                        // 작은 큐브 그리기
-                        svg += drawBlock(gx, gy, gz, scale, scale, scale*20, {
-                            top: color, right: '#111', left: color, stroke: 'none'
-                        });
-                    }
-                }
-            }
-            offset += width + 1;
-        }
-        return svg;
-    };
-
-
-    // --- 렌더링 큐 (Painter's Algorithm) ---
-    // 모든 객체를 리스트에 넣고 깊이(depth = gx + gy) 순서로 정렬하여 그립니다.
-    let renderQueue = [];
-
-    // 1. 잔디 (바닥) - 큰 다이아몬드
-    renderQueue.push({
-        depth: -100, // 가장 아래
-        draw: () => {
-            let s = '';
-            // 잔디 베이스
-            s += drawBlock(-2, -2, -2, 14, 14, 2, { top: '#2d4c1e', right: '#1a2e12', left: '#1f3815' });
-            // 잔디 질감 (랜덤 픽셀)
-            for(let i=0; i<30; i++) {
-                const rx = Math.random() * 12 - 1;
-                const ry = Math.random() * 12 - 1;
-                s += drawBlock(rx, ry, 0, 0.2, 0.2, 0.1, { top: '#4ca64c', right: 'none', left: 'none' });
-            }
-            return s;
-        }
-    });
-
-    // 2. 도로 (잔디 위, 건물 앞)
-    // 대각선으로 뻗은 도로
-    renderQueue.push({
-        depth: 20, // 건물보다 약간 앞쪽(또는 좌표에 따라 조정)
-        draw: () => {
-            // 도로 베이스 (-2, 9) ~ (9, -2) 대각선 방향으로 배치하고 싶음
-            // 하지만 단순하게 오른쪽 하단 모서리를 따라 배치
-            // 잔디가 (0,0)~(12,12)라면 도로는 (10,0)~(10,12) 라인
-            let s = '';
-            // 도로 블록을 여러개 이어 붙임 (곡선이나 경사를 위해)
-            const roadColor = { top: '#333333', right: '#222222', left: '#2a2a2a' };
-            
-            // 도로: (10, -2) 에서 (10, 14) 까지 직선
-            s += drawBlock(8, -2, 0, 4, 16, 0.1, roadColor);
-            
-            // 중앙선
-            s += `<g opacity="0.7">`;
-            for(let y=-1; y<14; y+=2) {
-                s += drawBlock(9.8, y, 0.15, 0.4, 1, 0.05, { top: '#ffcc00', right: 'none', left: 'none' });
-            }
-            s += `</g>`;
-            return s;
-        }
-    });
-
-    // 3. 건물 및 데이터 객체 배치
-    // 대각선: (0, 0) -> (6, 6) 방향으로 배치하면 서로 가리지 않고 잘 보임
-    weekData.forEach((day, idx) => {
-        const count = day.contributionCount;
-        const gx = 1 + idx; // 1, 2, 3, 4...
-        const gy = 1 + idx; // 1, 2, 3, 4... 대각선 배치
-        
-        // 깊이 계산 (Isometric에서 깊이는 x + y)
-        const depth = gx + gy;
-
-        renderQueue.push({
-            depth: depth,
-            draw: () => {
-                let s = '';
-                
-                if (count === 0) {
-                    // === 가로등 (앤티크 스타일) ===
-                    const poleColor = { top: '#222', right: '#111', left: '#1a1a1a' };
-                    // 기둥
-                    s += drawBlock(gx+0.4, gy+0.4, 0, 0.2, 0.2, 60, poleColor);
-                    // 램프 헤드
-                    s += drawBlock(gx+0.1, gy+0.1, 60, 0.8, 0.8, 0.5, poleColor); // 받침
-                    // 유리
-                    s += drawBlock(gx+0.2, gy+0.2, 60.5, 0.6, 0.6, 12, { top: '#ffeba1', right: '#ffdd66', left: '#ffeeaa', stroke: '#ccaa44' });
-                    // 지붕
-                    s += drawBlock(gx, gy, 72.5, 1, 1, 2, poleColor);
-                    s += drawBlock(gx+0.4, gy+0.4, 74.5, 0.2, 0.2, 3, poleColor); // 꼭대기 장식
-
-                    // 빛 효과 (SVG Filter 대신 투명 폴리곤)
-                    const center = iso(gx+0.5, gy+0.5, 66);
-                    s += `<circle cx="${center.x}" cy="${center.y}" r="15" fill="#ffdd66" opacity="0.3" class="lamp-glow"/>`;
-
-                    // 텍스트 (날짜)
-                    s += drawVoxelText(dayNames[day.weekday], gx, gy, 85, '#8899aa');
-                    s += drawVoxelText("0", gx+0.3, gy+0.3, 80, '#ffdd66');
-
-                } else {
-                    // === 건물 ===
-                    const h = Math.min(150, 40 + count * 15);
-                    const bColor = { top: '#6a7a8a', right: '#4a5a6a', left: '#5a6a7a', stroke: '#334455' };
-                    
-                    // 건물 본체
-                    s += drawBlock(gx, gy, 0, 0.8, 0.8, h, bColor);
-
-                    // 창문 (픽셀 느낌)
-                    const winRows = Math.floor(h / 15);
-                    for (let r = 1; r < winRows; r++) {
-                        const wz = r * 15;
-                        const isLit = Math.random() > 0.3;
-                        const wColor = isLit ? '#ffdd66' : '#223344';
-                        
-                        // 왼쪽 면 창문
-                        s += drawBlock(gx-0.05, gy+0.1, wz, 0.05, 0.2, 6, { top: wColor, right: wColor, left: wColor });
-                        s += drawBlock(gx-0.05, gy+0.5, wz, 0.05, 0.2, 6, { top: wColor, right: wColor, left: wColor });
-
-                        // 오른쪽 면 창문
-                        s += drawBlock(gx+0.1, gy+0.85, wz, 0.2, 0.05, 6, { top: wColor, right: wColor, left: wColor });
-                        s += drawBlock(gx+0.5, gy+0.85, wz, 0.2, 0.05, 6, { top: wColor, right: wColor, left: wColor });
-                    }
-
-                    // 텍스트 (날짜 및 개수)
-                    s += drawVoxelText(dayNames[day.weekday], gx, gy, h + 20, '#8899aa');
-                    s += drawVoxelText(count.toString(), gx, gy, h + 8, '#ffdd66');
-                }
-                return s;
-            }
-        });
-    });
-
-    // 4. 자동차 (도로 위)
-    renderQueue.push({
-        depth: 25, // 도로(20)보다 위, 건물 근처
-        draw: () => {
-            let s = '';
-            // 차 1
-            const cx = 9; const cy = 2;
-            const carColor = { top: '#4a90e2', right: '#357abd', left: '#5a9de2' };
-            s += drawBlock(cx, cy, 0.5, 1.5, 3, 8, carColor); // 몸통
-            s += drawBlock(cx+0.2, cy+0.5, 8.5, 1.1, 1.5, 5, { top: '#222', right: '#222', left: '#222' }); // 창문/지붕
-            // 헤드라이트
-            s += drawBlock(cx+0.2, cy-0.1, 2, 0.3, 0.1, 2, { top: '#ffeb3b', right: '#ffeb3b', left: '#ffeb3b' });
-            s += drawBlock(cx+1.0, cy-0.1, 2, 0.3, 0.1, 2, { top: '#ffeb3b', right: '#ffeb3b', left: '#ffeb3b' });
-            return s;
-        }
-    });
-
-    // --- 정렬 및 렌더링 실행 ---
-    renderQueue.sort((a, b) => a.depth - b.depth);
-
-    let objectsSvg = '';
-    renderQueue.forEach(obj => {
-        objectsSvg += obj.draw();
-    });
-
-
-    // --- 배경 요소 ---
+    
+    let elements = '';
     let stars = '';
+    
+    // 별
     for (let i = 0; i < 60; i++) {
-        const sx = Math.random() * width;
-        const sy = Math.random() * height * 0.6;
-        const r = Math.random() * 1.5;
-        const delay = Math.random() * 3;
-        stars += `<rect x="${sx}" y="${sy}" width="${r*2}" height="${r*2}" fill="white" class="star" style="animation-delay: ${delay}s"/>`;
+        const x = Math.random() * width;
+        const y = Math.random() * 160;
+        const r = Math.random() * 1.5 + 0.5;
+        const delay = (Math.random() * 3).toFixed(1);
+        stars += `<circle class="star" cx="${x}" cy="${y}" r="${r}" fill="white" style="animation-delay: ${delay}s"/>`;
     }
-
-    // --- 최종 SVG 조합 ---
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}">
-        <defs>
-            <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#0f0f1a"/>
-                <stop offset="100%" stop-color="#2a2a3a"/>
-            </linearGradient>
-            <style>
-                @keyframes twinkle { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
-                @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
-                @keyframes lampPulse { 0%, 100% { opacity: 0.2; } 50% { opacity: 0.4; } }
-                .star { animation: twinkle 3s infinite; }
-                .lamp-glow { animation: lampPulse 4s infinite; }
-            </style>
-        </defs>
+    
+    const todayContributions = weekData[weekData.length - 1].contributionCount;
+    
+    // 오프셋
+    const offsetX = 120;
+    const offsetY = 180;
+    
+    // 도로 (대각선)
+    const roadY = 250;
+    elements += `
+        <polygon points="
+            ${offsetX + isoX(-50, roadY)},${offsetY + isoY(-50, roadY, 0)}
+            ${offsetX + isoX(650, roadY)},${offsetY + isoY(650, roadY, 0)}
+            ${offsetX + isoX(650, roadY + 50)},${offsetY + isoY(650, roadY + 50, 0)}
+            ${offsetX + isoX(-50, roadY + 50)},${offsetY + isoY(-50, roadY + 50, 0)}
+        " fill="#2a2a2a"/>
+        <line 
+            x1="${offsetX + isoX(0, roadY + 25)}" 
+            y1="${offsetY + isoY(0, roadY + 25, 0)}" 
+            x2="${offsetX + isoX(600, roadY + 25)}" 
+            y2="${offsetY + isoY(600, roadY + 25, 0)}" 
+            stroke="#ffff66" stroke-width="2" stroke-dasharray="15,12" opacity="0.7"/>
+    `;
+    
+    // 잔디 (위쪽 - 건물 뒤)
+    elements += `
+        <polygon points="
+            0,0
+            ${width},0
+            ${width},${offsetY + isoY(700, roadY, 0)}
+            ${offsetX + isoX(700, roadY)},${offsetY + isoY(700, roadY, 0)}
+            ${offsetX + isoX(-100, roadY)},${offsetY + isoY(-100, roadY, 0)}
+            0,${offsetY + isoY(-100, roadY, 0)}
+        " fill="#2d4d2d"/>
+    `;
+    
+    // 잔디 (아래쪽 - 도로 뒤)
+    elements += `
+        <polygon points="
+            0,${height}
+            ${width},${height}
+            ${width},${offsetY + isoY(700, roadY + 50, 0)}
+            ${offsetX + isoX(700, roadY + 50)},${offsetY + isoY(700, roadY + 50, 0)}
+            ${offsetX + isoX(-100, roadY + 50)},${offsetY + isoY(-100, roadY + 50, 0)}
+            0,${offsetY + isoY(-100, roadY + 50, 0)}
+        " fill="#1a3a1a"/>
+    `;
+    
+    // 건물 설정
+    const buildingWidth = 55;
+    const buildingDepth = 40;
+    const spacing = 80;
+    const maxHeight = 160;
+    const buildingY = roadY - buildingDepth - 10; // 도로 위쪽
+    
+    // 건물 그리기 (오른쪽부터 - 뒤에서 앞으로)
+    for (let i = 6; i >= 0; i--) {
+        const day = weekData[i];
+        const count = day.contributionCount;
+        const bx = i * spacing;
+        const by = buildingY;
         
-        <rect width="${width}" height="${height}" fill="url(#skyGrad)"/>
-        ${stars}
-        
-        <g transform="translate(800, 80)">
-             <rect x="-20" y="-20" width="40" height="40" fill="#fff9c4"/>
-             <rect x="-25" y="-10" width="5" height="20" fill="#fff9c4"/>
-             <rect x="20" y="-10" width="5" height="20" fill="#fff9c4"/>
-             <rect x="-10" y="-25" width="20" height="5" fill="#fff9c4"/>
-             <rect x="-10" y="20" width="20" height="5" fill="#fff9c4"/>
-             <rect x="-10" y="-5" width="8" height="8" fill="#e6ee9c" opacity="0.5"/>
-        </g>
-
-        <g transform="translate(0, 50)">
-            ${objectsSvg}
-        </g>
-
-        <g font-family="'Courier New', monospace" font-weight="bold">
-            <text x="${width/2}" y="50" text-anchor="middle" fill="#fff" font-size="28" stroke="#000" stroke-width="4" paint-order="stroke">CONTRIBUTION CITY</text>
-            <text x="${width/2}" y="50" text-anchor="middle" fill="#fff" font-size="28">CONTRIBUTION CITY</text>
+        if (count === 0) {
+            // 가로등
+            const lampCx = offsetX + isoX(bx + buildingWidth/2, by + buildingDepth/2);
+            const lampBase = offsetY + isoY(bx + buildingWidth/2, by + buildingDepth/2, 0);
+            const lampTop = offsetY + isoY(bx + buildingWidth/2, by + buildingDepth/2, 70);
             
-            <text x="30" y="${height - 50}" fill="#fff" font-size="18">TOTAL: <tspan fill="#ffdd66">${totalContributions}</tspan></text>
-            <text x="30" y="${height - 25}" fill="#fff" font-size="18">TODAY: <tspan fill="#ffdd66">${weekData[weekData.length-1].contributionCount}</tspan></text>
+            elements += `
+                <g class="lamp">
+                    <rect x="${lampCx - 2}" y="${lampTop}" width="4" height="${lampBase - lampTop}" fill="#444"/>
+                    <ellipse cx="${lampCx}" cy="${lampTop - 4}" rx="10" ry="5" fill="#333"/>
+                    <ellipse class="lamp-glow" cx="${lampCx}" cy="${lampTop - 2}" rx="15" ry="8" fill="#ffdd44" opacity="0.5"/>
+                    <ellipse cx="${lampCx}" cy="${lampTop - 3}" rx="6" ry="3" fill="#ffeedd"/>
+                    <polygon points="${lampCx - 10},${lampTop} ${lampCx + 10},${lampTop} ${lampCx + 18},${lampBase - 10} ${lampCx - 18},${lampBase - 10}" fill="#ffdd44" opacity="0.08"/>
+                </g>
+            `;
+            
+            // 라벨
+            const labelX = lampCx - 12;
+            const labelY = lampTop - 30;
+            elements += drawDotText2D(dayNames[day.weekday], labelX, labelY, 3, '#8899bb');
+            elements += drawDotText2D(count.toString(), labelX + 4, labelY + 18, 4, '#ffdd66');
+            
+        } else {
+            // 건물 높이
+            const bHeight = Math.max(40, (count / 20) * maxHeight);
+            
+            // 건물 꼭지점
+            const p = {
+                // 바닥
+                f1: { x: offsetX + isoX(bx, by), y: offsetY + isoY(bx, by, 0) },
+                f2: { x: offsetX + isoX(bx + buildingWidth, by), y: offsetY + isoY(bx + buildingWidth, by, 0) },
+                f3: { x: offsetX + isoX(bx + buildingWidth, by + buildingDepth), y: offsetY + isoY(bx + buildingWidth, by + buildingDepth, 0) },
+                f4: { x: offsetX + isoX(bx, by + buildingDepth), y: offsetY + isoY(bx, by + buildingDepth, 0) },
+                // 지붕
+                t1: { x: offsetX + isoX(bx, by), y: offsetY + isoY(bx, by, bHeight) },
+                t2: { x: offsetX + isoX(bx + buildingWidth, by), y: offsetY + isoY(bx + buildingWidth, by, bHeight) },
+                t3: { x: offsetX + isoX(bx + buildingWidth, by + buildingDepth), y: offsetY + isoY(bx + buildingWidth, by + buildingDepth, bHeight) },
+                t4: { x: offsetX + isoX(bx, by + buildingDepth), y: offsetY + isoY(bx, by + buildingDepth, bHeight) }
+            };
+            
+            // 창문
+            let windows = '';
+            const winRows = Math.floor((bHeight - 15) / 22);
+            const winCols = 3;
+            
+            // 정면 창문 (도로쪽 - by + buildingDepth 면)
+            for (let row = 0; row < winRows; row++) {
+                for (let col = 0; col < winCols; col++) {
+                    const wz = bHeight - 12 - row * 22;
+                    if (wz < 10) continue;
+                    
+                    const wx1 = bx + 8 + col * 16;
+                    const wx2 = wx1 + 10;
+                    const wy = by + buildingDepth;
+                    
+                    const isLit = Math.random() > 0.2;
+                    const glowColor = isLit ? '#ffdd55' : '#181818';
+                    
+                    const wp1 = { x: offsetX + isoX(wx1, wy), y: offsetY + isoY(wx1, wy, wz) };
+                    const wp2 = { x: offsetX + isoX(wx2, wy), y: offsetY + isoY(wx2, wy, wz) };
+                    const wp3 = { x: offsetX + isoX(wx2, wy), y: offsetY + isoY(wx2, wy, wz - 14) };
+                    const wp4 = { x: offsetX + isoX(wx1, wy), y: offsetY + isoY(wx1, wy, wz - 14) };
+                    
+                    windows += `<polygon class="window" points="${wp1.x},${wp1.y} ${wp2.x},${wp2.y} ${wp3.x},${wp3.y} ${wp4.x},${wp4.y}" fill="${glowColor}"/>`;
+                }
+            }
+            
+            // 오른쪽 면 창문
+            for (let row = 0; row < winRows; row++) {
+                for (let col = 0; col < 2; col++) {
+                    const wz = bHeight - 12 - row * 22;
+                    if (wz < 10) continue;
+                    
+                    const wx = bx + buildingWidth;
+                    const wy1 = by + 8 + col * 16;
+                    const wy2 = wy1 + 10;
+                    
+                    const isLit = Math.random() > 0.2;
+                    const glowColor = isLit ? '#ddbb44' : '#151515';
+                    
+                    const wp1 = { x: offsetX + isoX(wx, wy1), y: offsetY + isoY(wx, wy1, wz) };
+                    const wp2 = { x: offsetX + isoX(wx, wy2), y: offsetY + isoY(wx, wy2, wz) };
+                    const wp3 = { x: offsetX + isoX(wx, wy2), y: offsetY + isoY(wx, wy2, wz - 14) };
+                    const wp4 = { x: offsetX + isoX(wx, wy1), y: offsetY + isoY(wx, wy1, wz - 14) };
+                    
+                    windows += `<polygon class="window" points="${wp1.x},${wp1.y} ${wp2.x},${wp2.y} ${wp3.x},${wp3.y} ${wp4.x},${wp4.y}" fill="${glowColor}"/>`;
+                }
+            }
+            
+            // 건물 본체
+            elements += `
+                <g class="building">
+                    <!-- 왼쪽 면 -->
+                    <polygon points="${p.f1.x},${p.f1.y} ${p.t1.x},${p.t1.y} ${p.t4.x},${p.t4.y} ${p.f4.x},${p.f4.y}" fill="#3a3a2a"/>
+                    <!-- 정면 (도로쪽) -->
+                    <polygon points="${p.f4.x},${p.f4.y} ${p.t4.x},${p.t4.y} ${p.t3.x},${p.t3.y} ${p.f3.x},${p.f3.y}" fill="#4a4a3a"/>
+                    <!-- 오른쪽 면 -->
+                    <polygon points="${p.f2.x},${p.f2.y} ${p.t2.x},${p.t2.y} ${p.t3.x},${p.t3.y} ${p.f3.x},${p.f3.y}" fill="#353525"/>
+                    <!-- 지붕 -->
+                    <polygon points="${p.t1.x},${p.t1.y} ${p.t2.x},${p.t2.y} ${p.t3.x},${p.t3.y} ${p.t4.x},${p.t4.y}" fill="#5a5a4a"/>
+                    ${windows}
+                </g>
+            `;
+            
+            // 라벨 (건물 위)
+            const labelCx = offsetX + isoX(bx + buildingWidth/2, by + buildingDepth/2);
+            const labelCy = offsetY + isoY(bx + buildingWidth/2, by + buildingDepth/2, bHeight + 10);
+            elements += drawDotText2D(dayNames[day.weekday], labelCx - 10, labelCy - 20, 3, '#8899bb');
+            elements += drawDotText2D(count.toString(), labelCx - 6, labelCy - 5, 4, '#ffdd66');
+        }
+    }
+    
+    // 자동차 (도로 위)
+    const carX = 150;
+    const carY = roadY + 15;
+    const carZ = 0;
+    
+    elements += `
+        <g class="car">
+            <polygon points="
+                ${offsetX + isoX(carX, carY)},${offsetY + isoY(carX, carY, 5)}
+                ${offsetX + isoX(carX + 35, carY)},${offsetY + isoY(carX + 35, carY, 5)}
+                ${offsetX + isoX(carX + 35, carY + 18)},${offsetY + isoY(carX + 35, carY + 18, 5)}
+                ${offsetX + isoX(carX, carY + 18)},${offsetY + isoY(carX, carY + 18, 5)}
+            " fill="#1a1a2a"/>
+            <polygon points="
+                ${offsetX + isoX(carX + 8, carY + 2)},${offsetY + isoY(carX + 8, carY + 2, 12)}
+                ${offsetX + isoX(carX + 28, carY + 2)},${offsetY + isoY(carX + 28, carY + 2, 12)}
+                ${offsetX + isoX(carX + 28, carY + 16)},${offsetY + isoY(carX + 28, carY + 16, 12)}
+                ${offsetX + isoX(carX + 8, carY + 16)},${offsetY + isoY(carX + 8, carY + 16, 12)}
+            " fill="#2a2a3a"/>
+            <ellipse cx="${offsetX + isoX(carX + 33, carY + 6)}" cy="${offsetY + isoY(carX + 33, carY + 6, 4)}" rx="3" ry="2" fill="#ffff99"/>
+            <ellipse cx="${offsetX + isoX(carX + 33, carY + 12)}" cy="${offsetY + isoY(carX + 33, carY + 12, 4)}" rx="3" ry="2" fill="#ffff99"/>
+            <ellipse cx="${offsetX + isoX(carX + 2, carY + 6)}" cy="${offsetY + isoY(carX + 2, carY + 6, 4)}" rx="2" ry="1.5" fill="#ff4444"/>
+            <ellipse cx="${offsetX + isoX(carX + 2, carY + 12)}" cy="${offsetY + isoY(carX + 2, carY + 12, 4)}" rx="2" ry="1.5" fill="#ff4444"/>
         </g>
-    </svg>`;
+    `;
+
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#080810"/>
+      <stop offset="60%" style="stop-color:#151525"/>
+      <stop offset="100%" style="stop-color:#252535"/>
+    </linearGradient>
+    
+    <style>
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.2; }
+        50% { opacity: 1; }
+      }
+      @keyframes windowFlicker {
+        0%, 93%, 100% { opacity: 1; }
+        95% { opacity: 0.4; }
+      }
+      @keyframes lampGlow {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 0.7; }
+      }
+      .star { animation: twinkle 2.5s ease-in-out infinite; }
+      .window { animation: windowFlicker 5s ease-in-out infinite; }
+      .lamp-glow { animation: lampGlow 2s ease-in-out infinite; }
+    </style>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect width="${width}" height="${height}" fill="url(#skyGradient)"/>
+  
+  <!-- 별 -->
+  ${stars}
+  
+  <!-- 달 -->
+  <circle cx="800" cy="70" r="40" fill="#ffffee"/>
+  <circle cx="792" cy="62" r="7" fill="#eeddcc" opacity="0.4"/>
+  <circle cx="808" cy="78" r="4" fill="#eeddcc" opacity="0.3"/>
+  
+  <!-- 요소들 -->
+  ${elements}
+  
+  <!-- 타이틀 -->
+  ${drawDotText2D('CONTRIBUTION CITY', width/2 - 100, 25, 4, '#ffffff')}
+  
+  <!-- 통계 (왼쪽 하단) -->
+  ${drawDotText2D('TOTAL: ' + totalContributions, 25, height - 55, 3, '#ffffff')}
+  ${drawDotText2D('TODAY: ' + todayContributions, 25, height - 30, 3, '#ffffff')}
+</svg>`;
 
     return svg;
 }
 
-// 3. 실행 함수
 async function main() {
     try {
         console.log(`Fetching contributions for ${USERNAME}...`);
         const calendar = await fetchContributions();
+        
         console.log(`Total contributions: ${calendar.totalContributions}`);
         
         const weekData = getLastWeekData(calendar);
-        console.log('Last 6 days data:', weekData.map(d => `${d.date}: ${d.contributionCount}`).join(', '));
+        console.log('Last 7 days:', weekData.map(d => `${d.date}: ${d.contributionCount}`).join(', '));
         
         const svg = generateSVG(weekData, calendar.totalContributions);
         
-        const outputDir = 'profile-3d-contrib';
-        if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
-        fs.writeFileSync(`${outputDir}/contribution-city.svg`, svg);
-        console.log(`Generated: ${outputDir}/contribution-city.svg`);
+        if (!fs.existsSync('profile-3d-contrib')) {
+            fs.mkdirSync('profile-3d-contrib');
+        }
+        
+        fs.writeFileSync('profile-3d-contrib/contribution-city.svg', svg);
+        console.log('Generated: profile-3d-contrib/contribution-city.svg');
+        
     } catch (error) {
         console.error('Error:', error);
         process.exit(1);
