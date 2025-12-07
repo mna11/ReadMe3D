@@ -1,0 +1,36 @@
+<svg width="156" height="184" viewBox="0 0 156 184" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="80" height="80" transform="matrix(0.866025 0.5 -0.866025 0.5 78.282 3.29834)" fill="#BDCBFD"/>
+<rect width="80" height="100" transform="matrix(0.866025 0.5 0 1 9 43.2983)" fill="#93AAFC"/>
+<rect width="80" height="100" transform="matrix(0.866025 -0.5 0 1 78.282 83.2983)" fill="#6580E1"/>
+<mask id="mask0_2_3322" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="19" y="83" width="18" height="51">
+<rect width="20" height="40" transform="matrix(0.866025 0.5 0 1 19 83.2983)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_2_3322)">
+<rect width="80" height="40" transform="matrix(0.866025 -0.5 0 1 19 83.2983)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 0.5 -0.866025 0.5 88.282 83.2983)" fill="#FDEFBD"/>
+</g>
+<mask id="mask1_2_3322" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="43" y="98" width="18" height="51">
+<rect width="20" height="40" transform="matrix(0.866025 0.5 0 1 43 98.2983)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask1_2_3322)">
+<rect width="80" height="40" transform="matrix(0.866025 -0.5 0 1 43 98.2983)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 0.5 -0.866025 0.5 112.282 98.2983)" fill="#FDEFBD"/>
+</g>
+<mask id="mask2_2_3322" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="90" y="98" width="18" height="51">
+<rect width="20" height="40" transform="matrix(0.866025 -0.5 0 1 90 108.298)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask2_2_3322)">
+<rect width="80" height="40" transform="matrix(0.866025 0.5 0 1 38.0386 58.2983)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 -0.5 0.866025 0.5 20.718 108.298)" fill="#FDEFBD"/>
+</g>
+<mask id="mask3_2_3322" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="119" y="83" width="18" height="51">
+<rect width="20" height="40" transform="matrix(0.866025 -0.5 0 1 119 93.2983)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask3_2_3322)">
+<rect width="80" height="40" transform="matrix(0.866025 0.5 0 1 67.0386 43.2983)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 -0.5 0.866025 0.5 49.718 93.2983)" fill="#FDEFBD"/>
+</g>
+<rect width="90" height="90" transform="matrix(0.866025 0.5 -0.866025 0.5 77.9424 0)" fill="#919ECB"/>
+<rect width="90" height="20" transform="matrix(0.866025 0.5 0 1 0 45)" fill="#7A8FDA"/>
+<rect width="90" height="20" transform="matrix(0.866025 -0.5 0 1 77.9424 90)" fill="#5A72C8"/>
+</svg>

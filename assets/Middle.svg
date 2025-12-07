@@ -1,0 +1,110 @@
+<svg width="139" height="280" viewBox="0 0 139 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="80" height="80" transform="matrix(0.866025 0.5 -0.866025 0.5 69.282 0)" fill="#9A9A9A"/>
+<rect width="80" height="200" transform="matrix(0.866025 0.5 0 1 0 40)" fill="#737373"/>
+<rect width="80" height="200" transform="matrix(0.866025 -0.5 0 1 69.282 80)" fill="#4D4D4D"/>
+<mask id="mask0_2_3169" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="11" y="80" width="18" height="50">
+<rect width="20" height="40" transform="matrix(0.866025 0.5 0 1 11 80)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_2_3169)">
+<rect width="80" height="40" transform="matrix(0.866025 -0.5 0 1 11 80)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 0.5 -0.866025 0.5 80.282 80)" fill="#FDEFBD"/>
+</g>
+<mask id="mask1_2_3169" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="35" y="93" width="18" height="50">
+<rect width="20" height="40" transform="matrix(0.866025 0.5 0 1 35 93)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask1_2_3169)">
+<rect width="80" height="40" transform="matrix(0.866025 -0.5 0 1 35 93)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 0.5 -0.866025 0.5 104.282 93)" fill="#FDEFBD"/>
+</g>
+<mask id="mask2_2_3169" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="11" y="135" width="18" height="50">
+<rect width="20" height="40" transform="matrix(0.866025 0.5 0 1 11 135)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask2_2_3169)">
+<rect width="80" height="40" transform="matrix(0.866025 -0.5 0 1 11 135)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 0.5 -0.866025 0.5 80.282 135)" fill="#FDEFBD"/>
+</g>
+<mask id="mask3_2_3169" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="11" y="190" width="18" height="50">
+<rect width="20" height="40" transform="matrix(0.866025 0.5 0 1 11 190)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask3_2_3169)">
+<rect width="80" height="40" transform="matrix(0.866025 -0.5 0 1 11 190)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 0.5 -0.866025 0.5 80.282 190)" fill="#FDEFBD"/>
+</g>
+<mask id="mask4_2_3169" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="35" y="149" width="18" height="50">
+<rect width="20" height="40" transform="matrix(0.866025 0.5 0 1 35 149)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask4_2_3169)">
+<rect width="80" height="40" transform="matrix(0.866025 -0.5 0 1 35 149)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 0.5 -0.866025 0.5 104.282 149)" fill="#FDEFBD"/>
+</g>
+<mask id="mask5_2_3169" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="35" y="205" width="18" height="50">
+<rect width="20" height="40" transform="matrix(0.866025 0.5 0 1 35 205)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask5_2_3169)">
+<rect width="80" height="40" transform="matrix(0.866025 -0.5 0 1 35 205)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 0.5 -0.866025 0.5 104.282 205)" fill="#FDEFBD"/>
+</g>
+<mask id="mask6_2_3169" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="82" y="95" width="18" height="50">
+<rect width="20" height="40" transform="matrix(0.866025 -0.5 0 1 82 105)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask6_2_3169)">
+<rect width="80" height="40" transform="matrix(0.866025 0.5 0 1 30.0386 55)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 -0.5 0.866025 0.5 12.718 105)" fill="#FDEFBD"/>
+</g>
+<mask id="mask7_2_3169" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="82" y="205" width="18" height="50">
+<rect width="20" height="40" transform="matrix(0.866025 -0.5 0 1 82 215)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask7_2_3169)">
+<rect width="80" height="40" transform="matrix(0.866025 0.5 0 1 30.0386 165)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 -0.5 0.866025 0.5 12.718 215)" fill="#FDEFBD"/>
+</g>
+<mask id="mask8_2_3169" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="82" y="150" width="18" height="50">
+<rect width="20" height="40" transform="matrix(0.866025 -0.5 0 1 82 160)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask8_2_3169)">
+<rect width="80" height="40" transform="matrix(0.866025 0.5 0 1 30.0386 110)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 -0.5 0.866025 0.5 12.718 160)" fill="#FDEFBD"/>
+<mask id="mask9_2_3169" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="82" y="150" width="18" height="50">
+<rect width="20" height="40" transform="matrix(0.866025 -0.5 0 1 82 160)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask9_2_3169)">
+<rect width="80" height="40" transform="matrix(0.866025 0.5 0 1 30.0386 110)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 -0.5 0.866025 0.5 12.718 160)" fill="#FDEFBD"/>
+</g>
+<mask id="mask10_2_3169" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="82" y="150" width="18" height="50">
+<rect width="20" height="40" transform="matrix(0.866025 -0.5 0 1 82 160)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask10_2_3169)">
+<rect width="80" height="40" transform="matrix(0.866025 0.5 0 1 30.0386 110)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 -0.5 0.866025 0.5 12.718 160)" fill="#FDEFBD"/>
+</g>
+<mask id="mask11_2_3169" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="82" y="150" width="18" height="50">
+<rect width="20" height="40" transform="matrix(0.866025 -0.5 0 1 82 160)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask11_2_3169)">
+<rect width="80" height="40" transform="matrix(0.866025 0.5 0 1 30.0386 110)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 -0.5 0.866025 0.5 12.718 160)" fill="#FDEFBD"/>
+</g>
+</g>
+<mask id="mask12_2_3169" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="111" y="81" width="18" height="50">
+<rect width="20" height="40" transform="matrix(0.866025 -0.5 0 1 111 91)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask12_2_3169)">
+<rect width="80" height="40" transform="matrix(0.866025 0.5 0 1 59.0386 41)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 -0.5 0.866025 0.5 41.718 91)" fill="#FDEFBD"/>
+</g>
+<mask id="mask13_2_3169" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="111" y="190" width="18" height="50">
+<rect width="20" height="40" transform="matrix(0.866025 -0.5 0 1 111 200)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask13_2_3169)">
+<rect width="80" height="40" transform="matrix(0.866025 0.5 0 1 59.0386 150)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 -0.5 0.866025 0.5 41.718 200)" fill="#FDEFBD"/>
+</g>
+<mask id="mask14_2_3169" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="111" y="135" width="18" height="50">
+<rect width="20" height="40" transform="matrix(0.866025 -0.5 0 1 111 145)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask14_2_3169)">
+<rect width="80" height="40" transform="matrix(0.866025 0.5 0 1 59.0386 95)" fill="#FCE593"/>
+<rect width="20" height="80" transform="matrix(0.866025 -0.5 0.866025 0.5 41.718 145)" fill="#FDEFBD"/>
+</g>
+</svg>
